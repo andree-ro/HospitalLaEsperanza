@@ -16,11 +16,11 @@ class Paciente:
 
     def management(self, action):
         if action == 'ag_paciente':
-            self.cliente_ag()
+            self.paciente_ag()
         elif action == 'up_paciente':
-            self.cliente_update()
+            self.paciente_update()
         elif action == 'del_paciente':
-            self.cliente_delete()
+            self.paciente_delete()
 
     def paciente_update(self):
         management = Manager()
