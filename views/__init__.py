@@ -1,1 +1,1 @@
-# from .main_view import VentanaPrincipal
+from .main_view import VentanaPrincipal
