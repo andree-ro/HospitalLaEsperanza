@@ -190,7 +190,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>6</number>
+             <number>10</number>
             </property>
             <widget class="QWidget" name="page_farmacia">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -4065,32 +4065,6 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_23">
                     <item>
-                     <widget class="QFrame" name="frame_53">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_38">
-                       <item>
-                        <widget class="QLabel" name="label_31">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>ID:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="info_usuario_25"/>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
                      <widget class="QFrame" name="frame_41">
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -4111,7 +4085,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_18"/>
+                        <widget class="QLineEdit" name="nombreDoc_le"/>
                        </item>
                       </layout>
                      </widget>
@@ -4137,7 +4111,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_19"/>
+                        <widget class="QLineEdit" name="especialidadDoc_le"/>
                        </item>
                       </layout>
                      </widget>
@@ -4163,7 +4137,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_20"/>
+                        <widget class="QLineEdit" name="costCita_ln"/>
                        </item>
                       </layout>
                      </widget>
@@ -4200,7 +4174,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="cargar_invetario_19">
+                     <widget class="QPushButton" name="agregarDoc_btn">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -4358,7 +4332,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_24"/>
+                        <widget class="QLineEdit" name="idActualizarDoc_le"/>
                        </item>
                       </layout>
                      </widget>
@@ -4371,48 +4345,53 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_32">
-                       <item>
-                        <widget class="QLabel" name="label_27">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
+                      <widget class="QLabel" name="label_27">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>60</y>
+                         <width>91</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Nombre:</string>
-                         </property>
-                        </widget>
+                       </property>
+                       <property name="text">
+                        <string>Dato a Cambiar</string>
+                       </property>
+                      </widget>
+                      <widget class="QComboBox" name="datoCambiarDoc_box">
+                       <property name="geometry">
+                        <rect>
+                         <x>110</x>
+                         <y>60</y>
+                         <width>231</width>
+                         <height>18</height>
+                        </rect>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>--Seleccionar--</string>
+                        </property>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_21"/>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QFrame" name="frame_49">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_33">
-                       <item>
-                        <widget class="QLabel" name="label_28">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Especialidad:</string>
-                         </property>
-                        </widget>
+                        <property name="text">
+                         <string>nombre</string>
+                        </property>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_22"/>
+                        <property name="text">
+                         <string>especialidad</string>
+                        </property>
                        </item>
-                      </layout>
+                       <item>
+                        <property name="text">
+                         <string>cobroCita</string>
+                        </property>
+                       </item>
+                      </widget>
                      </widget>
                     </item>
                     <item>
@@ -4431,12 +4410,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                          </property>
                          <property name="text">
-                          <string>Costo de cita:</string>
+                          <string>Nuevo Valor</string>
                          </property>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="info_usuario_23"/>
+                        <widget class="QLineEdit" name="nuevoValorDoc_le"/>
                        </item>
                       </layout>
                      </widget>
@@ -4473,7 +4452,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="cargar_invetario_20">
+                     <widget class="QPushButton" name="actualizarDoc_btn">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -4720,7 +4699,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_116">
                           <item>
-                           <widget class="QTableWidget" name="tableWidget_12">
+                           <widget class="QTableWidget" name="tabla_doctores">
                             <property name="styleSheet">
                              <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
                             </property>
@@ -4741,7 +4720,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                             </column>
                             <column>
                              <property name="text">
-                              <string>Cita $</string>
+                              <string>Cita</string>
                              </property>
                             </column>
                            </widget>
@@ -4775,7 +4754,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="cargar_invetario_14">
+                              <widget class="QPushButton" name="cargar_tabla_doc_btn">
                                <property name="minimumSize">
                                 <size>
                                  <width>100</width>
@@ -5023,7 +5002,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="btn_agregar_C_7">
+                              <widget class="QPushButton" name="btn_agregarDoctor">
                                <property name="minimumSize">
                                 <size>
                                  <width>150</width>
@@ -5081,7 +5060,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="btn_actualizar_C_7">
+                              <widget class="QPushButton" name="btn_actualizarDoc">
                                <property name="minimumSize">
                                 <size>
                                  <width>150</width>
@@ -5139,7 +5118,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="btn_eliminar_C_7">
+                              <widget class="QPushButton" name="btn_eliminar_doctor">
                                <property name="minimumSize">
                                 <size>
                                  <width>150</width>
