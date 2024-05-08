@@ -110,16 +110,12 @@ class VentanaPrincipal(QMainWindow):
         self.carga_tabla_doctor()
 
     def click_tabla_doctor(self, row, column):
-        print('1')
         manager = sql_structures.Manager()
-        print('1')
         item = self.tabla_doctores.item(row, column)
         value = item.text()
-        print('2')
         columns_ingreso = ['id', 'nombre', 'especialidad', 'cobroCita']
         header_item = self.tabla_doctores.horizontalHeaderItem(column)
         column_name = header_item.text()
-        print('3')
 
         if column_name == 'ID':
             self.id_c = manager.get('doctor', columns_ingreso, value, 'id')
