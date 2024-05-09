@@ -24,7 +24,7 @@ class Manager:
     def __init__(self):
         self.database_user = 'root'
         self.database_password = 'andree2332'
-        self.database_database = 'basedatoscooperativa'
+        self.database_database = 'hosplaesperanza'
         self.conexion = get_db_connection(self.database_user, self.database_database, self.database_password)
         self.cursor = self.conexion.cursor()
 

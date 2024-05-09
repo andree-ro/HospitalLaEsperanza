@@ -3,7 +3,7 @@ from .manager import Manager
 columns_ingreso = ['id', 'nombre', 'cantidad', 'descripcion', 'precio', 'fecha_de_vencimiento']
 
 
-class inventarioFarmacia:
+class InventarioFarmacia:
     def __init__(self, nombre, cantidad, descripcion, precio, fecha_de_vencimiento, columna=None, valor=None, noInventario=None):
         self.nombre = nombre
         self.cantidad = cantidad
