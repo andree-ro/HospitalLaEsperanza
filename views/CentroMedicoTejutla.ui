@@ -224,7 +224,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="currentIndex">
-           <number>10</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="page_farmacia">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -1190,34 +1190,48 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           <property name="frameShadow">
                            <enum>QFrame::Raised</enum>
                           </property>
-                          <layout class="QHBoxLayout" name="horizontalLayout_43">
-                           <item>
-                            <widget class="QLabel" name="label_114">
-                             <property name="minimumSize">
-                              <size>
-                               <width>0</width>
-                               <height>50</height>
-                              </size>
-                             </property>
-                             <property name="maximumSize">
-                              <size>
-                               <width>16777215</width>
-                               <height>50</height>
-                              </size>
-                             </property>
-                             <property name="styleSheet">
-                              <string notr="true">color: rgb(0, 0, 0);
+                          <widget class="QLabel" name="label_114">
+                           <property name="geometry">
+                            <rect>
+                             <x>10</x>
+                             <y>31</y>
+                             <width>54</width>
+                             <height>50</height>
+                            </rect>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>50</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>50</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: rgb(0, 0, 0);
 font: 75 12pt &quot;Open Sans Semibold&quot;</string>
-                             </property>
-                             <property name="text">
-                              <string>Usuario</string>
-                             </property>
-                             <property name="alignment">
-                              <set>Qt::AlignCenter</set>
-                             </property>
-                            </widget>
-                           </item>
-                          </layout>
+                           </property>
+                           <property name="text">
+                            <string>Usuario</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                          </widget>
+                          <widget class="QLineEdit" name="lineEdit">
+                           <property name="geometry">
+                            <rect>
+                             <x>90</x>
+                             <y>50</y>
+                             <width>113</width>
+                             <height>20</height>
+                            </rect>
+                           </property>
+                          </widget>
                          </widget>
                         </item>
                         <item>
@@ -1236,17 +1250,6 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                             <number>15</number>
                            </property>
                            <item>
-                            <widget class="QLabel" name="label_115">
-                             <property name="styleSheet">
-                              <string notr="true">color: rgb(0, 0, 0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                             </property>
-                             <property name="text">
-                              <string>Nombre:</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
                             <widget class="QLineEdit" name="fincaAcText_4">
                              <property name="minimumSize">
                               <size>
@@ -1259,6 +1262,17 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                                <width>190</width>
                                <height>16777215</height>
                               </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_115">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Nombre:</string>
                              </property>
                             </widget>
                            </item>
@@ -3778,11 +3792,6 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                           <property name="styleSheet">
                            <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
                           </property>
-                          <column>
-                           <property name="text">
-                            <string>ID</string>
-                           </property>
-                          </column>
                           <column>
                            <property name="text">
                             <string>Nombre</string>
@@ -8138,6 +8147,28 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLineEdit" name="fincaAcText_7">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>910</y>
+      <width>190</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>190</width>
+      <height>16777215</height>
+     </size>
+    </property>
    </widget>
   </widget>
  </widget>
