@@ -68,6 +68,8 @@ class VentanaPrincipal(QMainWindow):
         self.cargarInventarioPac_btn.clicked.connect(self.carga_tabla_pacientes)
         self.btn_eliminarPaciente.clicked.connect(self.eliminar_pacientes)
         self.tablaPaciente.cellClicked.connect(self.click_tabla_pacientes)
+        self.btn_historial.clicked.connect(self.show_page_historial)
+
 
         # botones venta
         # self.btn_realizado_cotizacion.clicked.connect(self.registrar_cotizacion)
@@ -147,6 +149,9 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_actualizar_cit(self):
         self.stackedWidget.setCurrentWidget(self.page_actualizar_Cita)
+
+    def show_page_historial(self):
+        self.stackedWidget.setCurrentWidget(self.page_historial_clinico)
 
     # Doctor
     def registrar_doctor(self):
