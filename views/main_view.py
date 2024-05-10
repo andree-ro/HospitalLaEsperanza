@@ -28,6 +28,7 @@ class VentanaPrincipal(QMainWindow):
         self.btn_actualizar_paciente.clicked.connect(self.show_page_actualizar_pac)
         self.btn_agregarDoctor.clicked.connect(self.show_page_agregar_doc)
         self.btn_actualizarDoc.clicked.connect(self.show_page_actualizar_doc)
+        self.btn_modulo_venta.clicked.connect(self.show_page_venta)
 
         # botones doctor
         self.agregarDoc_btn.clicked.connect(self.registrar_doctor)
@@ -50,6 +51,10 @@ class VentanaPrincipal(QMainWindow):
         self.btn_eliminarPaciente.clicked.connect(self.eliminar_pacientes)
         self.tablaPaciente.cellClicked.connect(self.click_tabla_pacientes)
 
+        # botones venta
+        self.btn_realizado_cotizacion.clicked.connect(self.registrar_cotizacion)
+        self.btn_realizado_facturacion.clicked.connect(self.registrar_factura)
+
     # Funcionalidad de botones
 
     def inicio_sesion(self):
@@ -57,6 +62,9 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_farmacia(self):
         self.stackedWidget.setCurrentWidget(self.page_farmacia)
+
+    def show_page_venta (self):
+        self.stackedWidget.setCurrentWidget(self.page_ventas)
 
     def show_page_paciente(self):
         self.stackedWidget.setCurrentWidget(self.page_paciente)
@@ -328,5 +336,173 @@ class VentanaPrincipal(QMainWindow):
                 self.tablaPaciente.setItem(i, 2, QTableWidgetItem(str(dato[i][3])))
                 self.tablaPaciente.setItem(i, 3, QTableWidgetItem(str(dato[i][4])))
                 self.tablaPaciente.setItem(i, 4, QTableWidgetItem(str(dato[i][5])))
+        except Exception as e:
+            print(e)
+
+    # Ventas factura
+    def registrar_factura(self):
+        try:
+            columns_ingreso = ['id', 'nombre', 'cantidad', 'descripcion', 'precio', 'fecha_de_vencimiento']
+            cantidad = self.cantidadFactura_le.text()
+            precio = self.precioFactura_le.text()
+            total = int(cantidad) * int(precio)
+            pro = self.productofactura_le.text()
+            mana = sql_structures.Manager()
+            id_far = mana.get("inventariofarmacia", columns_ingreso, pro, "nombre")
+            factura = sql_structures.Factura(self.nombreVenta_le.text(),
+                                               self.nitVenta_le.text(),
+                                               self.direccionVenta_le.text(),
+                                               self.productofactura_le.text(),
+                                               total,
+                                               id_far,
+                                               self.usuarioVenta_le.text())
+            factura.management('ag_factura ')
+            self.nombreVenta_le.clear()
+            self.nitVenta_le.clear()
+            self.direccionVenta_le.clear()
+            self.productofactura_le.clear()
+            self.precioFactura_le.clear()
+            self.cantidadFactura_le.clear()
+            self.usuarioVenta_le.clear()
+            vie_Can = mana.gett("inventariofarmacia", "cantidad", "id", id_far)
+            nue_Can = int(vie_Can) - int(cantidad)
+            medicamento = sql_structures.InventarioFarmacia('',
+                                                            '',
+                                                            '',
+                                                            '',
+                                                            '',
+                                                            "cantidad",
+                                                            nue_Can,
+                                                            id_far)
+            medicamento.management('up_inventarioFarmacia')
+            QMessageBox.about(self, 'Aviso', 'Actualizado correctamente el inventario!')
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+
+    # Ventas cotizacion
+    def registrar_cotizacion(self):
+        try:
+            columns_ingreso = ['id', 'nombre', 'cantidad', 'descripcion', 'precio', 'fecha_de_vencimiento']
+            cantidad = self.cantidadCotizacion_le.text()
+            precio = self.precioCotizacion_le.text()
+            total = int(cantidad) * int(precio)
+            pro = self.productoCotizacion_le.text()
+            mana = sql_structures.Manager()
+            id_far = mana.gett("inventariofarmacia", columns_ingreso, "nombre", pro)
+            cotizacion = sql_structures.Cotizacion(self.nombreVenta_le.text(),
+                                               self.nitVenta_le.text(),
+                                               self.direccionVenta_le.text(),
+                                               self.productoCotizacion_le.text(),
+                                                   total,
+                                                   id_far)
+            cotizacion.management('ag_cotizacion')
+            self.nombreVenta_le.clear()
+            self.nitVenta_le.clear()
+            self.direccionVenta_le.clear()
+            self.productoCotizacion_le.clear()
+            self.cantidadCotizacion_le.clear()
+            self.precioCotizacion_le.clear()
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+
+# receta
+    def registrar_receta(self):
+        try:
+            columns_ingreso = ['id', 'nombre', 'especialidad', 'cobroCita']
+            doc = self.docReceta_le.text()
+            mana = sql_structures.Manager()
+            id_doc = mana.gett("doctor", columns_ingreso, "nombre", doc)
+            #####
+            columns_ingreso_pac = ['id', 'nombre', 'telefono', 'dpi', 'direccion', 'telefono2']
+            pac = self.pacReceta_le.text()
+            mana = sql_structures.Manager()
+            id_pac = mana.gett("paciente", columns_ingreso_pac, "nombre", pac)
+            receta = sql_structures.Receta(self.medicamentoReceta_le.text(),
+                                               self.dosisReceta_le.text(),
+                                               self.horarioReceta_le.text(),
+                                               self.descripcionReceta_le.text(),
+                                                   id_doc,
+                                                   id_pac)
+            receta.management('ag_receta')
+            self.medicamentoReceta_le.clear()
+            self.dosisReceta_le.clear()
+            self.horarioReceta_le.clear()
+            self.descripcionReceta_le.clear()
+            self.docReceta_le.clear()
+            self.pacReceta_le.clear()
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+
+    def actualizar_pacientes(self):
+        try:
+            paciente = sql_structures.Paciente('',
+                                               '',
+                                               '',
+                                               '',
+                                               '',
+                                               self.datoCambiarReceta_box.currentText(),
+                                               self.nuevoValorReceta_le.text(),
+                                               self.idActualizarReceta_le.text())
+            paciente.management('up_receta')
+            QMessageBox.about(self, 'Aviso', 'Actualizado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+
+    def eliminar_pacientes(self):
+        try:
+            paciente = sql_structures.Paciente('',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         self.id_c)
+            paciente.management('del_paciente')
+            QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Eliminacion fallida!')
+        self.carga_tabla_receta()
+
+    def click_tabla_receta(self, row, column):
+        manager = sql_structures.Manager()
+        item = self.tablaReceta.item(row, column)
+        value = item.text()
+        columns_ingreso = ['id', 'medicamento', 'dosis', 'horarios', 'descripcion', 'doctor_id', 'paciente_id']
+        header_item = self.tablaReceta.horizontalHeaderItem(column)
+        column_name = header_item.text()
+
+        if column_name == 'Medicamento':
+            self.id_c = manager.get('recetase', columns_ingreso, value, 'medicamento')
+        elif column_name == 'Dosis':
+            self.id_c = manager.get('recetas', columns_ingreso, value, 'dosis')
+        elif column_name == 'Horarios':
+            self.id_c = manager.get('recetas', columns_ingreso, value, 'horarios')
+        elif column_name == 'Descripción':
+            self.id_c = manager.get('recetas', columns_ingreso, value, 'descripcion')
+        elif column_name == 'Doctor':
+            self.id_c = manager.get('recetas', columns_ingreso, value, 'doctor_id')
+        elif column_name == 'Paciente':
+            self.id_c = manager.get('recetas', columns_ingreso, value, 'paciente_id')
+
+    def carga_tabla_receta(self):
+        try:
+            mana = sql_structures.Manager()
+            dato = mana.print_table('recetas')
+            self.tablaReceta.setRowCount(len(dato))
+            for i in range(len(dato)):
+                self.tablaReceta.setItem(i, 0, QTableWidgetItem(str(dato[i][1])))
+                self.tablaReceta.setItem(i, 1, QTableWidgetItem(str(dato[i][2])))
+                self.tablaReceta.setItem(i, 2, QTableWidgetItem(str(dato[i][3])))
+                self.tablaReceta.setItem(i, 3, QTableWidgetItem(str(dato[i][4])))
+                self.tablaReceta.setItem(i, 4, QTableWidgetItem(str(dato[i][5])))
         except Exception as e:
             print(e)
