@@ -224,7 +224,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="currentIndex">
-           <number>10</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="page_farmacia">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -456,7 +456,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                           </property>
                           <layout class="QHBoxLayout" name="horizontalLayout_97">
                            <item>
-                            <widget class="QPushButton" name="btn_modulo_venta">
+                            <widget class="QPushButton" name="btn_eliminar_C_8">
                              <property name="minimumSize">
                               <size>
                                <width>200</width>
@@ -1211,27 +1211,18 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              <height>50</height>
                             </size>
                            </property>
-                           <property name="font">
-                            <font>
-                             <family>Open Sans Semibold</family>
-                             <pointsize>10</pointsize>
-                             <weight>9</weight>
-                             <italic>false</italic>
-                             <bold>false</bold>
-                            </font>
-                           </property>
                            <property name="styleSheet">
                             <string notr="true">color: rgb(0, 0, 0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                            </property>
                            <property name="text">
-                            <string>Usuario: </string>
+                            <string>Usuario</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignCenter</set>
                            </property>
                           </widget>
-                          <widget class="QLineEdit" name="usuarioVenta_le">
+                          <widget class="QLineEdit" name="lineEdit">
                            <property name="geometry">
                             <rect>
                              <x>90</x>
@@ -1259,18 +1250,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             <number>15</number>
                            </property>
                            <item>
-                            <widget class="QLabel" name="label_115">
-                             <property name="styleSheet">
-                              <string notr="true">color: rgb(0, 0, 0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                             </property>
-                             <property name="text">
-                              <string>Nombre:</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item>
-                            <widget class="QLineEdit" name="nombreVenta_le">
+                            <widget class="QLineEdit" name="fincaAcText_4">
                              <property name="minimumSize">
                               <size>
                                <width>100</width>
@@ -1282,6 +1262,17 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                                <width>190</width>
                                <height>16777215</height>
                               </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_115">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Nombre:</string>
                              </property>
                             </widget>
                            </item>
@@ -1315,7 +1306,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="nitVenta_le">
+                            <widget class="QLineEdit" name="fincaAcText_5">
                              <property name="minimumSize">
                               <size>
                                <width>100</width>
@@ -1360,7 +1351,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="direccionVenta_le">
+                            <widget class="QLineEdit" name="fincaAcText_6">
                              <property name="minimumSize">
                               <size>
                                <width>100</width>
@@ -1539,7 +1530,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="productoCotizacion_le"/>
+                            <widget class="QLineEdit" name="lineEdit_8"/>
                            </item>
                           </layout>
                          </widget>
@@ -1571,7 +1562,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="cantidadCotizacion_le"/>
+                            <widget class="QLineEdit" name="lineEdit_9"/>
                            </item>
                           </layout>
                          </widget>
@@ -1603,7 +1594,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="precioCotizacion_le"/>
+                            <widget class="QLineEdit" name="lineEdit_5"/>
                            </item>
                           </layout>
                          </widget>
@@ -1705,7 +1696,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="btn_realizado_cotizacion">
+                            <widget class="QPushButton" name="realizado_cotizacion">
                              <property name="minimumSize">
                               <size>
                                <width>0</width>
@@ -1826,7 +1817,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="productofactura_le"/>
+                            <widget class="QLineEdit" name="lineEdit_11"/>
                            </item>
                           </layout>
                          </widget>
@@ -1858,7 +1849,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="cantidadFactura_le"/>
+                            <widget class="QLineEdit" name="lineEdit_10"/>
                            </item>
                           </layout>
                          </widget>
@@ -1890,7 +1881,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLineEdit" name="precioFactura_le"/>
+                            <widget class="QLineEdit" name="lineEdit_6"/>
                            </item>
                           </layout>
                          </widget>
@@ -1992,7 +1983,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                             </widget>
                            </item>
                            <item>
-                            <widget class="QPushButton" name="btn_realizado_facturacion">
+                            <widget class="QPushButton" name="realizado_facturacion">
                              <property name="minimumSize">
                               <size>
                                <width>0</width>
@@ -3057,7 +3048,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
+                            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -3105,7 +3096,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
+                            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -3163,7 +3154,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
+                            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -5673,7 +5664,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                            <string/>
                           </property>
                           <property name="pixmap">
-                           <pixmap>../../Centro Médico Tejutla/Iconos Farmacia/292476235_394879192623383_5439104735105605909_n.jpg</pixmap>
+                           <pixmap>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/292476235_394879192623383_5439104735105605909_n.jpg</pixmap>
                           </property>
                           <property name="scaledContents">
                            <bool>true</bool>
@@ -8156,6 +8147,28 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLineEdit" name="fincaAcText_7">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>910</y>
+      <width>190</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>190</width>
+      <height>16777215</height>
+     </size>
+    </property>
    </widget>
   </widget>
  </widget>

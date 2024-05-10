@@ -1,6 +1,11 @@
+import webbrowser
+
 from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import *
+from reportlab.pdfgen import canvas
+
 import sql_structures
+from datetime import *
 import pandas as pd
 from reportlab.lib.pagesizes import legal, landscape
 from reportlab.lib import colors
@@ -16,6 +21,12 @@ class VentanaPrincipal(QMainWindow):
 
         self.frame_modulos.hide()
 
+        self.productos = []
+        self.aux: int = 0
+        self.idFactura = 0
+        self.today = date.today()
+        self.acumulador = 1
+        self.total = 0
         # Botones y funciones
         self.btn_inicio_sesion.clicked.connect(self.inicio_sesion)
         self.btn_modulo_farmacia.clicked.connect(self.show_page_farmacia)
@@ -54,6 +65,12 @@ class VentanaPrincipal(QMainWindow):
         # botones venta
         self.btn_realizado_cotizacion.clicked.connect(self.registrar_cotizacion)
         self.btn_realizado_facturacion.clicked.connect(self.registrar_factura)
+
+        # Factura Cotizacion
+        self.agregarFactura.clicked.connect(self.agregar_a_Factura)
+        self.realizado_facturacion.clicked.connect(self.generarFactura)
+        self.agregarCotizacion.clicked.connect(self.agregar_a_cotizacion)
+        self.realizado_cotizacion.clicked.connect(self.generarCotizacion)
 
     # Funcionalidad de botones
 
@@ -254,7 +271,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
 
-# Inventario Medicamentos
+    # Inventario Medicamentos
     def registrar_pacientes(self):
         try:
             paciente = sql_structures.Paciente(self.nombrePaciente_le.text(),
@@ -292,13 +309,13 @@ class VentanaPrincipal(QMainWindow):
     def eliminar_pacientes(self):
         try:
             paciente = sql_structures.Paciente('',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         self.id_c)
+                                               '',
+                                               '',
+                                               '',
+                                               '',
+                                               '',
+                                               '',
+                                               self.id_c)
             paciente.management('del_paciente')
             QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
         except Exception as e:
@@ -338,6 +355,176 @@ class VentanaPrincipal(QMainWindow):
                 self.tablaPaciente.setItem(i, 4, QTableWidgetItem(str(dato[i][5])))
         except Exception as e:
             print(e)
+
+    # FACTURAS
+    def agregar_a_Factura(self):
+        producto = self.productoFac_txt.text()
+        cantidad = int(self.cantidadFac_txt.text())
+        precioUnidad = float(self.precioFac_text.text())
+        if self.aux == 0:
+            self.productos.append({
+                "cantidad": cantidad,
+                "producto": producto,
+                "precioUnidad": precioUnidad,
+                "subtotal": (cantidad * precioUnidad)
+            })
+            self.aux = 1
+        else:
+            encontrado = False
+            for p in self.productos:
+
+                if p["producto"] == producto:
+                    encontrado = True
+                    cantidadNueva = int(p['cantidad']) + int(cantidad)
+                    self.productos[self.productos.index(p)] = {
+                        "cantidad": cantidadNueva,
+                        "producto": producto,
+                        "precioUnidad": precioUnidad,
+                        "subtotal": (cantidadNueva * precioUnidad)
+                    }
+                    break
+            if not encontrado:
+                self.productos.append({
+                    "cantidad": cantidad,
+                    "producto": producto,
+                    "precioUnidad": precioUnidad,
+                    "subtotal": (cantidad * precioUnidad)
+                })
+        self.productoFac_txt.clear()
+        self.cantidadFac_txt.clear()
+        self.precioFac_text.clear()
+
+    def generarFactura(self):
+        now = datetime.now()
+        formato = now.strftime('%d - %m - %Y')
+        # crear pdf
+        pdf = canvas.Canvas(f"factura{self.idFactura}.pdf")
+        pdf.setFont("Helvetica", 12)
+        usuario = str(self.usuarioFactura_txt.text())
+        nombre = str(self.nombreFac_txt.text())
+        nit = str(self.nitFac_txt.text())
+        direccion = str(self.direccionFac_txt.text())
+        idFactura = f"{self.today.day}{self.today.month}{self.acumulador}"
+
+        pdf.drawString(100, 720, "Usuario" + str(usuario))
+        pdf.drawString(100, 700, "Nombre: " + str(nombre))
+        pdf.drawString(100, 680, "NIT: " + str(nit))
+        pdf.drawString(100, 660, "Dirección: " + str(direccion))
+        pdf.drawString(400, 700, "Factura:" + str(idFactura))
+        pdf.drawString(400, 680, "Fecha:" + str(formato))
+        pdf.drawString(50, 620, "CANTIDAD")
+        pdf.drawString(150, 620, "PRODUCTO")
+        pdf.drawString(225, 620, "PRECIO UNIDAD")
+        pdf.drawString(375, 620, "SUBTOTAL")
+        y = 600  # Posición vertical inicial
+        for producto in self.productos:
+            if y < 50:  # Ejemplo de margen inferior
+                break  # Salir del bucle si la posición y es demasiado baja
+            pdf.drawString(50, y, str(producto["cantidad"]))
+            pdf.drawString(150, y, str(producto["producto"]))
+            pdf.drawString(225, y, str(producto["precioUnidad"]))
+            pdf.drawString(375, y, str(producto["subtotal"]))
+            y -= 20
+        for producto in self.productos:
+            total = float(producto["precioUnidad"]) * int(producto["cantidad"])
+            self.total = total + self.total
+        pdf.drawString(400, y - 20, "Total: " + str(self.total))
+        pdf.save()
+        factura = f"factura{self.idFactura}.pdf"
+        webbrowser.open_new(factura)
+        self.productos.clear()
+        self.total = 0
+        self.acumulador += 1
+
+    def agregar_a_cotizacion(self):
+        print('1')
+        producto = str(self.productoCot_text.text())
+        print('1')
+        cantidad = int(self.cantidadCot_text.text())
+        print('1')
+        precioUnidad = float(self.precioCot_text.text())
+        print('1')
+        if self.aux == 0:
+            self.productos.append({
+                "cantidad": cantidad,
+                "producto": producto,
+                "precioUnidad": precioUnidad,
+                "subtotal": (cantidad * precioUnidad)
+            })
+            self.aux = 1
+            print('1')
+        else:
+            print('1')
+            encontrado = False
+            for p in self.productos:
+                print('1')
+                if p["producto"] == producto:
+                    encontrado = True
+                    cantidadNueva = int(p['cantidad']) + int(cantidad)
+                    self.productos[self.productos.index(p)] = {
+                        "cantidad": cantidadNueva,
+                        "producto": producto,
+                        "precioUnidad": precioUnidad,
+                        "subtotal": (cantidadNueva * precioUnidad)
+                    }
+                    print('1')
+                    break
+            print('1')
+            if not encontrado:
+                print('1')
+                self.productos.append({
+                    "cantidad": cantidad,
+                    "producto": producto,
+                    "precioUnidad": precioUnidad,
+                    "subtotal": (cantidad * precioUnidad)
+                })
+                print('1')
+        self.productoCot_text.clear()
+        self.cantidadCot_text.clear()
+        self.precioCot_text.clear()
+
+    def generarCotizacion(self):
+        now = datetime.now()
+        formato = now.strftime('%d - %m - %Y')
+        # crear pdf
+        pdf = canvas.Canvas(f"cotizacion.pdf")
+        pdf.setFont("Helvetica", 12)
+        usuario = str(self.usuarioFactura_txt.text())
+        nombre = str(self.nombreFac_txt.text())
+        nit = str(self.nitFac_txt.text())
+        direccion = str(self.direccionFac_txt.text())
+
+        pdf.drawString(100, 720, "Usuario" + str(usuario))
+        pdf.drawString(100, 700, "Nombre: " + str(nombre))
+        pdf.drawString(100, 680, "NIT: " + str(nit))
+        pdf.drawString(100, 660, "Dirección: " + str(direccion))
+        pdf.drawString(400, 700, "Factura:" + str('----'))
+        pdf.drawString(400, 680, "Fecha:" + str(formato))
+        pdf.drawString(50, 620, "CANTIDAD")
+        pdf.drawString(150, 620, "PRODUCTO")
+        pdf.drawString(225, 620, "PRECIO UNIDAD")
+        pdf.drawString(375, 620, "SUBTOTAL")
+        y = 600  # Posición vertical inicial
+        for producto in self.productos:
+            if y < 50:  # Ejemplo de margen inferior
+                break  # Salir del bucle si la posición y es demasiado baja
+            pdf.drawString(50, y, str(producto["cantidad"]))
+            pdf.drawString(150, y, str(producto["producto"]))
+            pdf.drawString(225, y, str(producto["precioUnidad"]))
+            pdf.drawString(375, y, str(producto["subtotal"]))
+            y -= 20
+        for producto in self.productos:
+            total = float(producto["precioUnidad"]) * int(producto["cantidad"])
+            self.total = total + self.total
+        pdf.drawString(400, y - 20, "Total: " + str(self.total))
+        pdf.save()
+        cotizacion = f"cotizacion.pdf"
+        webbrowser.open_new(cotizacion)
+        self.productos.clear()
+        self.total = 0
+        self.acumulador += 1
+
+
 
     # Ventas factura
     def registrar_factura(self):
