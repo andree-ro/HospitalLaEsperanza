@@ -1,7 +1,7 @@
 from .manager import Manager
 
 columns_ingreso = ['id', 'nombre', 'telefono', 'dpi', 'direccion', 'telefono2']
-
+columns_ingreso_c = ['id', 'horario', 'descripcion', 'paciente_id', 'doctor_id']
 
 class Paciente:
     def __init__(self, nombre, telefono, dpi, direccion, telefono2, columna=None, valor=None, noPaciente=None):
@@ -38,3 +38,38 @@ class Paciente:
 
     def __str__(self):
         return f"{self.nombre}, {self.telefono}, {self.dpi}, {self.direccion}, {self.telefono2}"
+
+class Cita:
+    def __init__(self, horario, descripcion, paciente_id, doctor_id, columna=None, valor=None, noCita=None):
+        self.horario = horario
+        self.descripcion = descripcion
+        self.paciente_id = paciente_id
+        self.doctor_id = doctor_id
+        self.columna = columna
+        self.valor = valor
+        self.noCita = noCita
+
+    def management(self, action):
+        if action == 'ag_cita':
+            self.cita_ag()
+        elif action == 'up_cita':
+            self.cita_update()
+        elif action == 'del_cita':
+            self.cita_delete()
+
+    def cita_update(self):
+        management = Manager()
+        management.update_table_with_id('citas', columns_ingreso, self.columna, self.valor, self.noCita)
+
+    def cita_ag(self):
+        management = Manager()
+        data_list = [self.horario, self.descripcion, self.paciente_id, self.doctor_id]
+        management.insert_into_table('citas', columns_ingreso, data_list)
+        # management.print_table('cliente')
+
+    def cita_delete(self):
+        management = Manager()
+        management.delete_id_row('citas', columns_ingreso, self.noCita)
+
+    def __str__(self):
+        return f"{self.horario}, {self.descripcion}, {self.paciente_id}, {self.doctor_id}"

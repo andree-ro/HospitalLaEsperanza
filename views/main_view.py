@@ -44,6 +44,9 @@ class VentanaPrincipal(QMainWindow):
         self.btn_modulo_venta.clicked.connect(self.show_page_venta)
         self.btn_agregar_receta.clicked.connect(self.show_page_agregar_rece)
         self.btn_actualizar_Receta.clicked.connect(self.show_page_actualizar_rece)
+        self.btn_Citas.clicked.connect(self.show_page_cita)
+        self.btn_agregar_Cita.clicked.connect(self.show_page_agregar_cit)
+        self.btn_actualizar_cita.clicked.connect(self.show_page_actualizar_cit)
 
         # botones doctor
         self.agregarDoc_btn.clicked.connect(self.registrar_doctor)
@@ -76,12 +79,21 @@ class VentanaPrincipal(QMainWindow):
         self.agregarCotizacion.clicked.connect(self.agregar_a_cotizacion)
         self.realizado_cotizacion.clicked.connect(self.generarCotizacion)
 
-        # Factura Cotizacion
+        # Receta
         self.agregarReceta_btn.clicked.connect(self.registrar_receta)
         self.actualizarReceta_btn.clicked.connect(self.actualizar_receta)
         self.cargarReceta_btn.clicked.connect(self.carga_tabla_receta)
         self.btn_eliminar_Receta.clicked.connect(self.eliminar_receta)
         self.tablaReceta.cellClicked.connect(self.click_tabla_receta)
+
+        # Receta
+        self.agCita_btn.clicked.connect(self.registrar_cita)
+        self.actualizarCita_btn.clicked.connect(self.actualizar_cita)
+        self.cargar_Cita.clicked.connect(self.carga_tabla_cita)
+        self.btn_eliminar_Cita.clicked.connect(self.eliminar_cita)
+        self.tablaCita.cellClicked.connect(self.click_tabla_cita)
+
+
 
     # Funcionalidad de botones
 
@@ -102,6 +114,9 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_receta(self):
         self.stackedWidget.setCurrentWidget(self.page_receta)
+
+    def show_page_cita(self):
+        self.stackedWidget.setCurrentWidget(self.page_cita)
 
     def show_page_agregar_i(self):
         self.stackedWidget.setCurrentWidget(self.page_inventario)
@@ -127,6 +142,11 @@ class VentanaPrincipal(QMainWindow):
     def show_page_actualizar_rece(self):
         self.stackedWidget.setCurrentWidget(self.page_actualizar_Receta)
 
+    def show_page_agregar_cit(self):
+        self.stackedWidget.setCurrentWidget(self.page_agregar_cita)
+
+    def show_page_actualizar_cit(self):
+        self.stackedWidget.setCurrentWidget(self.page_actualizar_Cita)
 
     # Doctor
     def registrar_doctor(self):
@@ -713,5 +733,93 @@ class VentanaPrincipal(QMainWindow):
                 self.tablaReceta.setItem(i, 3, QTableWidgetItem(str(dato[i][4])))
                 self.tablaReceta.setItem(i, 4, QTableWidgetItem(str(vie_Can)))
                 self.tablaReceta.setItem(i, 5, QTableWidgetItem(str(vie_Ca)))
+        except Exception as e:
+            print(e)
+
+# receta
+    def registrar_cita(self):
+        try:
+            columns_ingreso = ['id', 'nombre', 'especialidad', 'cobroCita']
+            doc = self.doctorCita_le.text()
+            mana = sql_structures.Manager()
+            id_doc = mana.get("doctor", columns_ingreso, doc, "nombre")
+            #####
+            columns_ingreso_pac = ['id', 'nombre', 'telefono', 'dpi', 'direccion', 'telefono2']
+            pac = self.pacienteCita_le.text()
+            mana = sql_structures.Manager()
+            id_pac = mana.get("paciente", columns_ingreso_pac, pac, "nombre")
+            cita = sql_structures.Cita(self.horarioCita_le.text(),
+                                               self.descripcionCita_ln.text(),
+                                                   id_doc,
+                                                   id_pac)
+            cita.management('ag_cita')
+            self.horarioCita_le.clear()
+            self.descripcionCita_ln.clear()
+            self.pacienteCita_le.clear()
+            self.doctorCita_le.clear()
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+
+    def actualizar_cita(self):
+        try:
+            cita = sql_structures.Cita('',
+                                               '',
+                                               '','',
+                                               self.datoCambiarCita_box.currentText(),
+                                               self.nuevoValorCita_le.text(),
+                                               self.idActualizarCita_le.text())
+            cita .management('up_cita')
+            QMessageBox.about(self, 'Aviso', 'Actualizado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+
+    def eliminar_cita(self):
+        try:
+            cita = sql_structures.Cita('',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         self.id_c)
+            cita.management('del_cita')
+            QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Eliminacion fallida!')
+        self.carga_tabla_cita()
+
+    def click_tabla_cita(self, row, column):
+        manager = sql_structures.Manager()
+        item = self.tablaCita.item(row, column)
+        value = item.text()
+        columns_ingreso = ['id', 'horario', 'descripcion', 'paciente_id', 'doctor_id']
+        header_item = self.tablaCita.horizontalHeaderItem(column)
+        column_name = header_item.text()
+
+        if column_name == 'Horarios':
+            self.id_c = manager.get('citas', columns_ingreso, value, 'horarios')
+        elif column_name == 'Descripción':
+            self.id_c = manager.get('citas', columns_ingreso, value, 'descripcion')
+        elif column_name == 'Doctor':
+            self.id_c = manager.get('citas', columns_ingreso, value, 'doctor_id')
+        elif column_name == 'Paciente':
+            self.id_c = manager.get('citas', columns_ingreso, value, 'paciente_id')
+
+    def carga_tabla_cita(self):
+        try:
+            mana = sql_structures.Manager()
+            dato = mana.print_table('citas')
+            self.tablaCita.setRowCount(len(dato))
+            for i in range(len(dato)):
+                vie_Can = mana.gett("doctor", "nombre", "id", dato[i][4])
+                vie_Ca = mana.gett("paciente", "nombre", "id", dato[i][3])
+                self.tablaCita.setItem(i, 0, QTableWidgetItem(str(dato[i][1])))
+                self.tablaCita.setItem(i, 1, QTableWidgetItem(str(dato[i][2])))
+                self.tablaCita.setItem(i, 2, QTableWidgetItem(str(vie_Ca)))
+                self.tablaCita.setItem(i, 3, QTableWidgetItem(str(vie_Can)))
         except Exception as e:
             print(e)
