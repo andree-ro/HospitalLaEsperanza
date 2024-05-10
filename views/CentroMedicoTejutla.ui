@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1357</width>
-    <height>888</height>
+    <height>930</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -7947,7 +7947,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</iconset>
+            <normaloff>Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</normaloff>Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -8003,7 +8003,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bcd5cc3d-f95c-4b6f-9c7d-e245ce5797e8.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bcd5cc3d-f95c-4b6f-9c7d-e245ce5797e8.png</iconset>
+            <normaloff>Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</normaloff>Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -8059,7 +8059,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</iconset>
+            <normaloff>Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</normaloff>Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -8115,7 +8115,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</iconset>
+            <normaloff>Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -8138,16 +8138,6 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
       </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
-    <property name="geometry">
-     <rect>
-      <x>1020</x>
-      <y>870</y>
-      <width>139</width>
-      <height>22</height>
-     </rect>
-    </property>
    </widget>
   </widget>
  </widget>
