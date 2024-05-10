@@ -218,7 +218,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>8</number>
+             <number>14</number>
             </property>
             <widget class="QWidget" name="page_farmacia">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -4748,7 +4748,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="btn_agregar_C_15">
+                              <widget class="QPushButton" name="btn_agregar_historial">
                                <property name="minimumSize">
                                 <size>
                                  <width>200</width>
@@ -5524,7 +5524,48 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                             <property name="frameShadow">
                              <enum>QFrame::Raised</enum>
                             </property>
-                            <layout class="QHBoxLayout" name="horizontalLayout_149">
+                            <layout class="QHBoxLayout" name="horizontalLayout_63">
+                             <item>
+                              <widget class="QPushButton" name="cargar_Cita_2">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>200</width>
+                                 <height>45</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Factura</string>
+                               </property>
+                               <property name="iconSize">
+                                <size>
+                                 <width>55</width>
+                                 <height>50</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
                              <item>
                               <spacer name="horizontalSpacer_71">
                                <property name="orientation">
