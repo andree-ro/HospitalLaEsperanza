@@ -224,7 +224,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page_farmacia">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -456,7 +456,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                           </property>
                           <layout class="QHBoxLayout" name="horizontalLayout_97">
                            <item>
-                            <widget class="QPushButton" name="btn_eliminar_C_8">
+                            <widget class="QPushButton" name="btn_modulo_venta">
                              <property name="minimumSize">
                               <size>
                                <width>200</width>

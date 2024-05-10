@@ -63,8 +63,8 @@ class VentanaPrincipal(QMainWindow):
         self.tablaPaciente.cellClicked.connect(self.click_tabla_pacientes)
 
         # botones venta
-        self.btn_realizado_cotizacion.clicked.connect(self.registrar_cotizacion)
-        self.btn_realizado_facturacion.clicked.connect(self.registrar_factura)
+        # self.btn_realizado_cotizacion.clicked.connect(self.registrar_cotizacion)
+        # self.btn_realizado_facturacion.clicked.connect(self.registrar_factura)
 
         # Factura Cotizacion
         self.agregarFactura.clicked.connect(self.agregar_a_Factura)
@@ -435,6 +435,7 @@ class VentanaPrincipal(QMainWindow):
         self.productos.clear()
         self.total = 0
         self.acumulador += 1
+        self.registrar_factura()
 
     def agregar_a_cotizacion(self):
         print('1')
@@ -523,6 +524,7 @@ class VentanaPrincipal(QMainWindow):
         self.productos.clear()
         self.total = 0
         self.acumulador += 1
+        self.registrar_cotizacion()
 
 
 
