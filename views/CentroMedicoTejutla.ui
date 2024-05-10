@@ -2950,7 +2950,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout_132">
                      <item>
-                      <widget class="QTableWidget" name="tableWidget_17">
+                      <widget class="QTableWidget" name="tablaPaciente">
                        <property name="styleSheet">
                         <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
                        </property>
@@ -3106,7 +3106,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="cargar_invetario_21">
+                         <widget class="QPushButton" name="cargarInventarioPac_btn">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -3364,7 +3364,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="btn_agregar_C_12">
+                         <widget class="QPushButton" name="btn_agregar_paciente">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -3422,7 +3422,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="btn_actualizar_C_12">
+                         <widget class="QPushButton" name="btn_actualizar_paciente">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -3480,7 +3480,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="btn_eliminar_C_15">
+                         <widget class="QPushButton" name="btn_eliminarPaciente">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -5193,7 +5193,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                    </spacer>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="cargar_invetario_16">
+                   <widget class="QPushButton" name="agPaciente_btn">
                     <property name="minimumSize">
                      <size>
                       <width>200</width>
@@ -5492,7 +5492,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                    </spacer>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="cargar_invetario_18">
+                   <widget class="QPushButton" name="actualizarPaciente_btn">
                     <property name="minimumSize">
                      <size>
                       <width>200</width>
