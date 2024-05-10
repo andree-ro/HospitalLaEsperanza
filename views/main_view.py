@@ -70,6 +70,7 @@ class VentanaPrincipal(QMainWindow):
         self.tablaPaciente.cellClicked.connect(self.click_tabla_pacientes)
         self.btn_historial.clicked.connect(self.show_page_historial)
         self.btn_agregar_historial.clicked.connect(self.show_page_agregar_historial)
+        self.btn_factura.clicked.connect(self.show_page_factura)
 
 
         # botones venta
@@ -156,6 +157,9 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_agregar_historial(self):
         self.stackedWidget.setCurrentWidget(self.page_agrega_historial)
+
+    def show_page_factura(self):
+        self.stackedWidget.setCurrentWidget(self.page_factura)
 
     # Doctor
     def registrar_doctor(self):
