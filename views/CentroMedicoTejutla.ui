@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1357</width>
-    <height>852</height>
+    <height>888</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>1319</width>
-      <height>875</height>
+      <width>1332</width>
+      <height>918</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -63,6 +63,34 @@
            </size>
           </property>
          </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>55</width>
+            <height>55</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="pixmap">
+           <pixmap>Iconos Farmacia/292476235_394879192623383_5439104735105605909_n.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
         <item>
          <widget class="QLabel" name="label_85">
@@ -144,7 +172,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/depositphotos_552016910-stock-illustration-open-book-diary-white-paper.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/depositphotos_552016910-stock-illustration-open-book-diary-white-paper.png</iconset>
+            <normaloff>Iconos Farmacia/depositphotos_552016910-stock-illustration-open-book-diary-white-paper.png</normaloff>Iconos Farmacia/depositphotos_552016910-stock-illustration-open-book-diary-white-paper.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -196,7 +224,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="currentIndex">
-           <number>6</number>
+           <number>10</number>
           </property>
           <widget class="QWidget" name="page_farmacia">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -465,7 +493,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_04440667-481e-4cdd-975b-b12b2e92fd62.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_04440667-481e-4cdd-975b-b12b2e92fd62.png</iconset>
+                               <normaloff>Iconos Farmacia/_04440667-481e-4cdd-975b-b12b2e92fd62.png</normaloff>Iconos Farmacia/_04440667-481e-4cdd-975b-b12b2e92fd62.png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -523,7 +551,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
+                               <normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -781,7 +809,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -839,7 +867,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                               <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -897,7 +925,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</iconset>
+                               <normaloff>Iconos Farmacia/t.png</normaloff>Iconos Farmacia/t.png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -940,6 +968,1237 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                       </widget>
                      </item>
                     </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_ventas">
+           <layout class="QVBoxLayout" name="verticalLayout_33">
+            <item>
+             <widget class="QFrame" name="frame_49">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_34">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_235">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>75</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                  <item>
+                   <spacer name="horizontalSpacer_36">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>311</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_126">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <property name="text">
+                     <string>Ventas</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_37">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>310</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_detalles_venta">
+                    <property name="minimumSize">
+                     <size>
+                      <width>150</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string> Detalles de Ventas</string>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>40</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_141">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_73">
+                  <item>
+                   <widget class="QFrame" name="frame_186">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_32">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_53">
+                       <property name="minimumSize">
+                        <size>
+                         <width>300</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>200</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_78">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_54">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_43">
+                           <item>
+                            <widget class="QLabel" name="label_114">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Usuario</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_188">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_33">
+                           <property name="leftMargin">
+                            <number>15</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>15</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_115">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Nombre:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="fincaAcText_4">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>190</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_192">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_38">
+                           <property name="leftMargin">
+                            <number>15</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>15</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_117">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Nit:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="fincaAcText_5">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>190</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_228">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_39">
+                           <property name="leftMargin">
+                            <number>15</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>15</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_118">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Direccion:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="fincaAcText_6">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>190</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_57">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_40">
+                           <item>
+                            <spacer name="horizontalSpacer_35">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>171</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="agregarCotizacion_2">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string>Agregar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_187">
+                       <property name="minimumSize">
+                        <size>
+                         <width>400</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_35">
+                        <item>
+                         <widget class="QFrame" name="frame_189">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>75</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>75</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_71">
+                           <item>
+                            <widget class="QLabel" name="label_102">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Cotización</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_190">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_2">
+                           <property name="leftMargin">
+                            <number>50</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>50</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_103">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Producto:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_8"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_236">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_147">
+                           <property name="leftMargin">
+                            <number>50</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>50</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_127">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Cantidad:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_9"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_195">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_141">
+                           <property name="leftMargin">
+                            <number>50</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>50</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_119">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Precio por unidad:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_5"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_237">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_4">
+                           <item>
+                            <widget class="QLabel" name="label_128">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Total:</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_129">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_196">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_44">
+                           <item>
+                            <spacer name="horizontalSpacer_18">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>171</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="agregarCotizacion">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Agregar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="realizado_cotizacion">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Realizado</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_197">
+                       <property name="minimumSize">
+                        <size>
+                         <width>400</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_36">
+                        <item>
+                         <widget class="QFrame" name="frame_229">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_74">
+                           <item>
+                            <widget class="QLabel" name="label_120">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Facturación</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_191">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_13">
+                           <property name="leftMargin">
+                            <number>50</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>50</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_104">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Producto:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_11"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_238">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_148">
+                           <property name="leftMargin">
+                            <number>50</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>50</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_130">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Cantidad:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_10"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_230">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_142">
+                           <property name="leftMargin">
+                            <number>50</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>50</number>
+                           </property>
+                           <item>
+                            <widget class="QLabel" name="label_121">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Precio por unidad:</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLineEdit" name="lineEdit_6"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_239">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_12">
+                           <item>
+                            <widget class="QLabel" name="label_131">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Total:</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="label_132">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_234">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_146">
+                           <item>
+                            <spacer name="horizontalSpacer_33">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>418</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="agregarFactura">
+                             <property name="minimumSize">
+                              <size>
+                               <width>100</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Agregar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="realizado_facturacion">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>35</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Realizado</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_detalles_ventas">
+           <layout class="QVBoxLayout" name="verticalLayout_37">
+            <item>
+             <widget class="QFrame" name="frame_55">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_38">
+               <item>
+                <widget class="QFrame" name="frame_56">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <spacer name="horizontalSpacer_39">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>523</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_133">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <property name="text">
+                     <string>Detalles de venta</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_38">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>522</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_58">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_42">
+                  <item>
+                   <widget class="QTableWidget" name="tablaFarmacia_3">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <column>
+                     <property name="text">
+                      <string>No.</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Producto</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Cantidad</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Precio por unidad</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Total</string>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </column>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_59">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_41">
+                  <item>
+                   <spacer name="horizontalSpacer_19">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>1076</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="agregarCotizacion_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>150</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Agregar</string>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>45</width>
+                      <height>45</height>
+                     </size>
+                    </property>
                    </widget>
                   </item>
                  </layout>
@@ -1231,7 +2490,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                      <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -1514,7 +2773,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                      <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -1691,7 +2950,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout_132">
                      <item>
-                      <widget class="QTableWidget" name="tablaPaciente">
+                      <widget class="QTableWidget" name="tableWidget_17">
                        <property name="styleSheet">
                         <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
                        </property>
@@ -1736,7 +2995,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
-                       <layout class="QHBoxLayout" name="horizontalLayout_124">
+                       <layout class="QHBoxLayout" name="horizontalLayout_45">
                         <item>
                          <widget class="QPushButton" name="btn_eliminar_C_14">
                           <property name="minimumSize">
@@ -1775,7 +3034,55 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
+                            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>65</width>
+                            <height>65</height>
+                           </size>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="btn_eliminar_C_20">
+                          <property name="minimumSize">
+                           <size>
+                            <width>200</width>
+                            <height>45</height>
+                           </size>
+                          </property>
+                          <property name="layoutDirection">
+                           <enum>Qt::LeftToRight</enum>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Citas programadas</string>
+                          </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -1799,7 +3106,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="cargarInventarioPac_btn">
+                         <widget class="QPushButton" name="cargar_invetario_21">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -1833,7 +3140,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
+                            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -2057,7 +3364,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="btn_agregar_paciente">
+                         <widget class="QPushButton" name="btn_agregar_C_12">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -2091,7 +3398,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                            <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -2115,7 +3422,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="btn_actualizar_paciente">
+                         <widget class="QPushButton" name="btn_actualizar_C_12">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -2149,7 +3456,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                            <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -2173,7 +3480,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                          </spacer>
                         </item>
                         <item>
-                         <widget class="QPushButton" name="btn_eliminarPaciente">
+                         <widget class="QPushButton" name="btn_eliminar_C_15">
                           <property name="minimumSize">
                            <size>
                             <width>200</width>
@@ -2207,7 +3514,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</iconset>
+                            <normaloff>Iconos Farmacia/t.png</normaloff>Iconos Farmacia/t.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -2242,6 +3549,1394 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                            </size>
                           </property>
                          </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_historial_clinico">
+           <layout class="QVBoxLayout" name="verticalLayout_31">
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_32">
+               <item>
+                <widget class="QFrame" name="frame_160">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_140">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="frame_222">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_136">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_165">
+                       <property name="minimumSize">
+                        <size>
+                         <width>1025</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_46">
+                        <item>
+                         <spacer name="horizontalSpacer_11">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>425</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_111">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                          </property>
+                          <property name="text">
+                           <string>Historial Clínico</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_122">
+                          <property name="minimumSize">
+                           <size>
+                            <width>200</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_12">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>425</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_223">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_138">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_224">
+                       <property name="minimumSize">
+                        <size>
+                         <width>1000</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>900</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_141">
+                        <item>
+                         <widget class="QTableWidget" name="tableWidget_20">
+                          <property name="styleSheet">
+                           <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
+                          </property>
+                          <column>
+                           <property name="text">
+                            <string>ID</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Nombre</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Edad</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Sexo</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Tipo de sangre</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Enfermedades Hereditarias</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Padecimientos previos</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Alergias</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_225">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_139">
+                           <item>
+                            <spacer name="horizontalSpacer_69">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>749</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="cargar_invetario_24">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>45</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Cargar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>55</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_226">
+                       <property name="minimumSize">
+                        <size>
+                         <width>250</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_142">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_227">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>75</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>75</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_140">
+                           <item>
+                            <spacer name="horizontalSpacer_70">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>98</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_menu_39">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>40</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-bottom-left-radius:1px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(231, 233, 239);
+border-bottom-left-radius:1px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen5.png</normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen5.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>40</width>
+                               <height>2035</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_menu_40">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>40</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-bottom-left-radius:1px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(231, 233, 239);
+border-bottom-left-radius:1px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen6.png</normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen6.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>40</width>
+                               <height>2035</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_menu_20">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_91">
+                           <item>
+                            <widget class="QLabel" name="label_112">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Modificaciones</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_76">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_agregar_C_15">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>75</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string> Agregar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>70</width>
+                               <height>70</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_77">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_eliminar_C_21">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>75</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Eliminar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/t.png</normaloff>Iconos Farmacia/t.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>65</width>
+                               <height>65</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_79">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page">
+           <layout class="QVBoxLayout" name="verticalLayout_40">
+            <item>
+             <widget class="QFrame" name="frame_60">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_39">
+               <item>
+                <widget class="QFrame" name="frame_167">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_143">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="frame_231">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_143">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_168">
+                       <property name="minimumSize">
+                        <size>
+                         <width>1025</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_47">
+                        <item>
+                         <spacer name="horizontalSpacer_13">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>481</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_113">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                          </property>
+                          <property name="text">
+                           <string>Cita </string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_123">
+                          <property name="minimumSize">
+                           <size>
+                            <width>200</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="horizontalSpacer_14">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>480</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_232">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_145">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_233">
+                       <property name="minimumSize">
+                        <size>
+                         <width>1000</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>900</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_144">
+                        <item>
+                         <widget class="QTableWidget" name="tableWidget_21">
+                          <property name="styleSheet">
+                           <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
+                          </property>
+                          <column>
+                           <property name="text">
+                            <string>Horario / Fecha</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Horario</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Descripción</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Doctor ID</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_240">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_149">
+                           <item>
+                            <spacer name="horizontalSpacer_71">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>749</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="cargar_invetario_25">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>45</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Cargar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>55</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_241">
+                       <property name="minimumSize">
+                        <size>
+                         <width>250</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_145">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QFrame" name="frame_242">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>75</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>75</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_150">
+                           <item>
+                            <spacer name="horizontalSpacer_72">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>98</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_menu_41">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>40</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-bottom-left-radius:1px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(231, 233, 239);
+border-bottom-left-radius:1px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen5.png</normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen5.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>40</width>
+                               <height>2035</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_menu_42">
+                             <property name="minimumSize">
+                              <size>
+                               <width>40</width>
+                               <height>25</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>40</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border-bottom-left-radius:1px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(0, 0, 0);
+background-color: rgb(231, 233, 239);
+border-bottom-left-radius:1px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}
+</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen6.png</normaloff>../../BaseDatosEnsoluna/views/designs/Imagenes/Imagen6.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>40</width>
+                               <height>2035</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_menu_21">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_41">
+                           <item>
+                            <widget class="QLabel" name="label_116">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                             </property>
+                             <property name="text">
+                              <string>Modificaciones</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_78">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_agregar_C_16">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>75</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string> Agregar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>70</width>
+                               <height>70</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_80">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_agregar_C_17">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>75</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string> Actualizar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>70</width>
+                               <height>70</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="btn_eliminar_C_22">
+                             <property name="minimumSize">
+                              <size>
+                               <width>200</width>
+                               <height>75</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Eliminar</string>
+                             </property>
+                             <property name="icon">
+                              <iconset>
+                               <normaloff>Iconos Farmacia/t.png</normaloff>Iconos Farmacia/t.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>65</width>
+                               <height>65</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="verticalSpacer_81">
+                             <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </widget>
                         </item>
                        </layout>
                       </widget>
@@ -2357,7 +5052,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="nombrePaciente_le"/>
+                      <widget class="QLineEdit" name="info_usuario_2"/>
                      </item>
                     </layout>
                    </widget>
@@ -2383,7 +5078,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="telefonoPaciente_le"/>
+                      <widget class="QLineEdit" name="info_usuario_6"/>
                      </item>
                     </layout>
                    </widget>
@@ -2409,7 +5104,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="dpiPaciente_le"/>
+                      <widget class="QLineEdit" name="info_usuario_3"/>
                      </item>
                     </layout>
                    </widget>
@@ -2435,7 +5130,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="direccionPaciente_le"/>
+                      <widget class="QLineEdit" name="info_usuario_5"/>
                      </item>
                     </layout>
                    </widget>
@@ -2461,7 +5156,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="telefono2Paciente_le"/>
+                      <widget class="QLineEdit" name="info_usuario_4"/>
                      </item>
                     </layout>
                    </widget>
@@ -2498,7 +5193,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                    </spacer>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="agPaciente_btn">
+                   <widget class="QPushButton" name="cargar_invetario_16">
                     <property name="minimumSize">
                      <size>
                       <width>200</width>
@@ -2538,7 +5233,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                      <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -2651,12 +5346,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                        </property>
                        <property name="text">
-                        <string>Id:</string>
+                        <string>Nombre:</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="idActualizarPac_le"/>
+                      <widget class="QLineEdit" name="info_usuario_13"/>
                      </item>
                     </layout>
                    </widget>
@@ -2669,58 +5364,22 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <widget class="QComboBox" name="datoCambiarPac_box">
-                     <property name="geometry">
-                      <rect>
-                       <x>80</x>
-                       <y>70</y>
-                       <width>461</width>
-                       <height>18</height>
-                      </rect>
-                     </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_23">
                      <item>
-                      <property name="text">
-                       <string>Nombre</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Telefono</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Dpi</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Direccion</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Telefono2</string>
-                      </property>
-                     </item>
-                    </widget>
-                    <widget class="QLabel" name="label_18">
-                     <property name="geometry">
-                      <rect>
-                       <x>10</x>
-                       <y>70</y>
-                       <width>55</width>
-                       <height>16</height>
-                      </rect>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                      <widget class="QLabel" name="label_18">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                     </property>
-                     <property name="text">
-                      <string>Columna:</string>
-                     </property>
-                    </widget>
+                       </property>
+                       <property name="text">
+                        <string>Teléfono:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="info_usuario_14"/>
+                     </item>
+                    </layout>
                    </widget>
                   </item>
                   <item>
@@ -2739,12 +5398,64 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                        </property>
                        <property name="text">
-                        <string>Nuevo dato:</string>
+                        <string>DPI:</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLineEdit" name="nuevoValorPac_le"/>
+                      <widget class="QLineEdit" name="info_usuario_15"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_36">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_26">
+                     <item>
+                      <widget class="QLabel" name="label_20">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Dirección:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="info_usuario_16"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_37">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_27">
+                     <item>
+                      <widget class="QLabel" name="label_21">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Teléfono 2:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="info_usuario_17"/>
                      </item>
                     </layout>
                    </widget>
@@ -2781,7 +5492,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                    </spacer>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="actualizarPaciente_btn">
+                   <widget class="QPushButton" name="cargar_invetario_18">
                     <property name="minimumSize">
                      <size>
                       <width>200</width>
@@ -2821,11 +5532,11 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                      <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
-                      <width>55</width>
+                      <width>58</width>
                       <height>50</height>
                      </size>
                     </property>
@@ -2944,7 +5655,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                            <string/>
                           </property>
                           <property name="pixmap">
-                           <pixmap>../../Centro Médico Tejutla/Iconos Farmacia/292476235_394879192623383_5439104735105605909_n.jpg</pixmap>
+                           <pixmap>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/292476235_394879192623383_5439104735105605909_n.jpg</pixmap>
                           </property>
                           <property name="scaledContents">
                            <bool>true</bool>
@@ -3023,7 +5734,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../Centro Médico Tejutla/Iconos Farmacia/_22cc7cb5-22dd-4c62-92a1-d29067c4cb1d.png</pixmap>
+                              <pixmap>Iconos Farmacia/_22cc7cb5-22dd-4c62-92a1-d29067c4cb1d.png</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -3115,7 +5826,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap>../../Centro Médico Tejutla/Iconos Farmacia/_03fc60e5-c76e-42d1-933b-d9dc5dbc94fe.png</pixmap>
+                              <pixmap>Iconos Farmacia/_03fc60e5-c76e-42d1-933b-d9dc5dbc94fe.png</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
@@ -3220,7 +5931,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_64b6f11b-5b9a-4fd4-a997-a90ade4eacde.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_64b6f11b-5b9a-4fd4-a997-a90ade4eacde.png</iconset>
+                            <normaloff>Iconos Farmacia/_64b6f11b-5b9a-4fd4-a997-a90ade4eacde.png</normaloff>Iconos Farmacia/_64b6f11b-5b9a-4fd4-a997-a90ade4eacde.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -3480,7 +6191,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                          <widget class="QPushButton" name="cargar_invetario_15">
                           <property name="minimumSize">
                            <size>
-                            <width>100</width>
+                            <width>150</width>
                             <height>35</height>
                            </size>
                           </property>
@@ -3508,6 +6219,16 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="text">
                            <string>Cargar</string>
+                          </property>
+                          <property name="icon">
+                           <iconset>
+                            <normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</normaloff>Iconos Farmacia/_65cf71fc-65d4-46ff-89b4-2bcc80b5e29b.png</iconset>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>55</width>
+                            <height>50</height>
+                           </size>
                           </property>
                          </widget>
                         </item>
@@ -3759,7 +6480,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                            <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -3817,7 +6538,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                            <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -3875,7 +6596,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</iconset>
+                            <normaloff>Iconos Farmacia/t.png</normaloff>Iconos Farmacia/t.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
@@ -4000,6 +6721,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_29">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_23">
                        <property name="styleSheet">
@@ -4026,6 +6753,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_30">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_24">
                        <property name="styleSheet">
@@ -4052,6 +6785,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_31">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_25">
                        <property name="styleSheet">
@@ -4141,7 +6880,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                      <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -4247,6 +6986,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_37">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_30">
                        <property name="styleSheet">
@@ -4272,53 +7017,49 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <widget class="QLabel" name="label_27">
-                     <property name="geometry">
-                      <rect>
-                       <x>10</x>
-                       <y>60</y>
-                       <width>91</width>
-                       <height>16</height>
-                      </rect>
+                    <layout class="QHBoxLayout" name="horizontalLayout_48">
+                     <property name="leftMargin">
+                      <number>100</number>
                      </property>
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_27">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                     </property>
-                     <property name="text">
-                      <string>Dato a Cambiar</string>
-                     </property>
-                    </widget>
-                    <widget class="QComboBox" name="datoCambiarDoc_box">
-                     <property name="geometry">
-                      <rect>
-                       <x>110</x>
-                       <y>60</y>
-                       <width>231</width>
-                       <height>18</height>
-                      </rect>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>--Seleccionar--</string>
-                      </property>
+                       </property>
+                       <property name="text">
+                        <string>Dato a Cambiar</string>
+                       </property>
+                      </widget>
                      </item>
                      <item>
-                      <property name="text">
-                       <string>nombre</string>
-                      </property>
+                      <widget class="QComboBox" name="datoCambiarDoc_box">
+                       <item>
+                        <property name="text">
+                         <string>--Seleccionar--</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>nombre</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>especialidad</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>cobroCita</string>
+                        </property>
+                       </item>
+                      </widget>
                      </item>
-                     <item>
-                      <property name="text">
-                       <string>especialidad</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>cobroCita</string>
-                      </property>
-                     </item>
-                    </widget>
+                    </layout>
                    </widget>
                   </item>
                   <item>
@@ -4330,6 +7071,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_35">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_29">
                        <property name="styleSheet">
@@ -4419,7 +7166,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                     </property>
                     <property name="icon">
                      <iconset>
-                      <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                      <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -4963,7 +7710,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/x.png</iconset>
+                               <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -5021,7 +7768,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/y (1).png</iconset>
+                               <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -5079,7 +7826,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                              </property>
                              <property name="icon">
                               <iconset>
-                               <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/t.png</iconset>
+                               <normaloff>Iconos Farmacia/t.png</normaloff>Iconos Farmacia/t.png</iconset>
                              </property>
                              <property name="iconSize">
                               <size>
@@ -5200,7 +7947,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</iconset>
+            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bc81dbfe-2cfe-46d0-8f9f-50d602e401a4.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -5256,7 +8003,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_bcd5cc3d-f95c-4b6f-9c7d-e245ce5797e8.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_bcd5cc3d-f95c-4b6f-9c7d-e245ce5797e8.png</iconset>
+            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bcd5cc3d-f95c-4b6f-9c7d-e245ce5797e8.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_bcd5cc3d-f95c-4b6f-9c7d-e245ce5797e8.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -5312,7 +8059,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</iconset>
+            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_e41c4536-8a64-4b3b-9ec6-9807b991da99.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -5368,7 +8115,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</iconset>
+            <normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</normaloff>../../../Desktop/Centro Médico Tejutla/Iconos Farmacia/_4e87da56-6b6b-4450-87fb-7ca198290b50 (1).png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -5391,6 +8138,16 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>870</y>
+      <width>139</width>
+      <height>22</height>
+     </rect>
+    </property>
    </widget>
   </widget>
  </widget>
