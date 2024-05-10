@@ -40,6 +40,10 @@ class VentanaPrincipal(QMainWindow):
         self.btn_agregarDoctor.clicked.connect(self.show_page_agregar_doc)
         self.btn_actualizarDoc.clicked.connect(self.show_page_actualizar_doc)
         self.btn_modulo_venta.clicked.connect(self.show_page_venta)
+        self.btn_actualizarDoc.clicked.connect(self.show_page_actualizar_doc)
+        self.btn_modulo_venta.clicked.connect(self.show_page_venta)
+        self.btn_agregar_receta.clicked.connect(self.show_page_agregar_rece)
+        self.btn_actualizar_Receta.clicked.connect(self.show_page_actualizar_rece)
 
         # botones doctor
         self.agregarDoc_btn.clicked.connect(self.registrar_doctor)
@@ -71,6 +75,13 @@ class VentanaPrincipal(QMainWindow):
         self.realizado_facturacion.clicked.connect(self.generarFactura)
         self.agregarCotizacion.clicked.connect(self.agregar_a_cotizacion)
         self.realizado_cotizacion.clicked.connect(self.generarCotizacion)
+
+        # Factura Cotizacion
+        self.agregarReceta_btn.clicked.connect(self.registrar_receta)
+        self.actualizarReceta_btn.clicked.connect(self.actualizar_receta)
+        self.cargarReceta_btn.clicked.connect(self.carga_tabla_receta)
+        self.btn_eliminar_Receta.clicked.connect(self.eliminar_receta)
+        self.tablaReceta.cellClicked.connect(self.click_tabla_receta)
 
     # Funcionalidad de botones
 
@@ -109,6 +120,13 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_actualizar_pac(self):
         self.stackedWidget.setCurrentWidget(self.page_actualizar_paciente)
+
+    def show_page_agregar_rece(self):
+        self.stackedWidget.setCurrentWidget(self.page_agregar_receta)
+
+    def show_page_actualizar_rece(self):
+        self.stackedWidget.setCurrentWidget(self.page_actualizar_Receta)
+
 
     # Doctor
     def registrar_doctor(self):
@@ -527,7 +545,6 @@ class VentanaPrincipal(QMainWindow):
         self.registrar_cotizacion()
 
 
-
     # Ventas factura
     def registrar_factura(self):
         try:
@@ -604,12 +621,12 @@ class VentanaPrincipal(QMainWindow):
             columns_ingreso = ['id', 'nombre', 'especialidad', 'cobroCita']
             doc = self.docReceta_le.text()
             mana = sql_structures.Manager()
-            id_doc = mana.gett("doctor", columns_ingreso, "nombre", doc)
+            id_doc = mana.get("doctor", columns_ingreso, doc, "nombre")
             #####
             columns_ingreso_pac = ['id', 'nombre', 'telefono', 'dpi', 'direccion', 'telefono2']
             pac = self.pacReceta_le.text()
             mana = sql_structures.Manager()
-            id_pac = mana.gett("paciente", columns_ingreso_pac, "nombre", pac)
+            id_pac = mana.get("paciente", columns_ingreso_pac, pac, "nombre")
             receta = sql_structures.Receta(self.medicamentoReceta_le.text(),
                                                self.dosisReceta_le.text(),
                                                self.horarioReceta_le.text(),
@@ -628,33 +645,33 @@ class VentanaPrincipal(QMainWindow):
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
 
-    def actualizar_pacientes(self):
+    def actualizar_receta(self):
         try:
-            paciente = sql_structures.Paciente('',
+            receta = sql_structures.Receta('',
                                                '',
                                                '',
                                                '',
-                                               '',
+                                               '','',
                                                self.datoCambiarReceta_box.currentText(),
                                                self.nuevoValorReceta_le.text(),
                                                self.idActualizarReceta_le.text())
-            paciente.management('up_receta')
+            receta .management('up_receta')
             QMessageBox.about(self, 'Aviso', 'Actualizado correctamente!')
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
 
-    def eliminar_pacientes(self):
+    def eliminar_receta(self):
         try:
-            paciente = sql_structures.Paciente('',
+            receta = sql_structures.Receta('',
                                                          '',
                                                          '',
                                                          '',
                                                          '',
                                                          '',
-                                                         '',
+                                                         '','',
                                                          self.id_c)
-            paciente.management('del_paciente')
+            receta.management('del_receta')
             QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
         except Exception as e:
             print(e)
@@ -670,7 +687,7 @@ class VentanaPrincipal(QMainWindow):
         column_name = header_item.text()
 
         if column_name == 'Medicamento':
-            self.id_c = manager.get('recetase', columns_ingreso, value, 'medicamento')
+            self.id_c = manager.get('recetas', columns_ingreso, value, 'medicamento')
         elif column_name == 'Dosis':
             self.id_c = manager.get('recetas', columns_ingreso, value, 'dosis')
         elif column_name == 'Horarios':
@@ -688,10 +705,13 @@ class VentanaPrincipal(QMainWindow):
             dato = mana.print_table('recetas')
             self.tablaReceta.setRowCount(len(dato))
             for i in range(len(dato)):
+                vie_Can = mana.gett("doctor", "nombre", "id", dato[i][5])
+                vie_Ca = mana.gett("paciente", "nombre", "id", dato[i][6])
                 self.tablaReceta.setItem(i, 0, QTableWidgetItem(str(dato[i][1])))
                 self.tablaReceta.setItem(i, 1, QTableWidgetItem(str(dato[i][2])))
                 self.tablaReceta.setItem(i, 2, QTableWidgetItem(str(dato[i][3])))
                 self.tablaReceta.setItem(i, 3, QTableWidgetItem(str(dato[i][4])))
-                self.tablaReceta.setItem(i, 4, QTableWidgetItem(str(dato[i][5])))
+                self.tablaReceta.setItem(i, 4, QTableWidgetItem(str(vie_Can)))
+                self.tablaReceta.setItem(i, 5, QTableWidgetItem(str(vie_Ca)))
         except Exception as e:
             print(e)
