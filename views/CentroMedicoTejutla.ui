@@ -19,7 +19,7 @@
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>1332</width>
+      <width>1349</width>
       <height>918</height>
      </rect>
     </property>
@@ -224,7 +224,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            <string notr="true">background-color: rgb(255, 255, 255);</string>
           </property>
           <property name="currentIndex">
-           <number>12</number>
+           <number>14</number>
           </property>
           <widget class="QWidget" name="page_farmacia">
            <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -2288,8 +2288,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
                     <property name="text">
                      <string>Agregar Información Medicamento</string>
@@ -2320,6 +2320,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_115">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_75">
                        <property name="styleSheet">
@@ -2346,6 +2352,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_116">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_76">
                        <property name="styleSheet">
@@ -2372,6 +2384,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_117">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_77">
                        <property name="styleSheet">
@@ -2398,6 +2416,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_118">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_78">
                        <property name="styleSheet">
@@ -2424,6 +2448,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_119">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_79">
                        <property name="styleSheet">
@@ -2587,8 +2617,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
                     <property name="text">
                      <string>Actualizar Información Medicamento</string>
@@ -2619,6 +2649,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_82">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_68">
                        <property name="styleSheet">
@@ -2626,7 +2662,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                        </property>
                        <property name="text">
-                        <string>id</string>
+                        <string>id:</string>
                        </property>
                       </widget>
                      </item>
@@ -2644,58 +2680,58 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <widget class="QLabel" name="label_69">
-                     <property name="geometry">
-                      <rect>
-                       <x>10</x>
-                       <y>70</y>
-                       <width>70</width>
-                       <height>16</height>
-                      </rect>
+                    <layout class="QHBoxLayout" name="horizontalLayout_62">
+                     <property name="leftMargin">
+                      <number>100</number>
                      </property>
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_69">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                     </property>
-                     <property name="text">
-                      <string>Columna</string>
-                     </property>
-                    </widget>
-                    <widget class="QComboBox" name="datoCambiarMed_box">
-                     <property name="geometry">
-                      <rect>
-                       <x>90</x>
-                       <y>70</y>
-                       <width>451</width>
-                       <height>18</height>
-                      </rect>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>Nombre</string>
-                      </property>
+                       </property>
+                       <property name="text">
+                        <string>Columna:</string>
+                       </property>
+                      </widget>
                      </item>
                      <item>
-                      <property name="text">
-                       <string>Cantidad</string>
-                      </property>
+                      <widget class="QComboBox" name="datoCambiarMed_box">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Nombre</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Cantidad</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Descripcion</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Precio</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Fecha_ven</string>
+                        </property>
+                       </item>
+                      </widget>
                      </item>
-                     <item>
-                      <property name="text">
-                       <string>Descripcion</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Precio</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Fecha_ven</string>
-                      </property>
-                     </item>
-                    </widget>
+                    </layout>
                    </widget>
                   </item>
                   <item>
@@ -2707,6 +2743,12 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_92">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
                      <item>
                       <widget class="QLabel" name="label_70">
                        <property name="styleSheet">
@@ -2714,7 +2756,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                        </property>
                        <property name="text">
-                        <string>Nuevo Valor</string>
+                        <string>Nuevo Valor:</string>
                        </property>
                       </widget>
                      </item>
@@ -3053,16 +3095,16 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
 }</string>
                           </property>
                           <property name="text">
-                           <string>Historial Clínico</string>
+                           <string> Historial Clínico</string>
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
+                            <normaloff>Iconos Farmacia/_d7e85524-c410-45dd-938f-ba074516783d.png</normaloff>Iconos Farmacia/_d7e85524-c410-45dd-938f-ba074516783d.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
-                            <width>65</width>
-                            <height>65</height>
+                            <width>50</width>
+                            <height>50</height>
                            </size>
                           </property>
                          </widget>
@@ -3105,12 +3147,12 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                           </property>
                           <property name="icon">
                            <iconset>
-                            <normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>../../Centro Médico Tejutla/Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
+                            <normaloff>Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</normaloff>Iconos Farmacia/_ff4853d7-f055-40e1-ac84-3b4d341eabd2.png</iconset>
                           </property>
                           <property name="iconSize">
                            <size>
-                            <width>65</width>
-                            <height>65</height>
+                            <width>50</width>
+                            <height>50</height>
                            </size>
                           </property>
                          </widget>
@@ -3588,241 +3630,259 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            </layout>
           </widget>
           <widget class="QWidget" name="page_agregar_cita">
-           <widget class="QFrame" name="frame_134">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>10</y>
-              <width>1292</width>
-              <height>691</height>
-             </rect>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_70">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="leftMargin">
-              <number>350</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>350</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QFrame" name="frame_142">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>55</height>
-                </size>
+           <layout class="QHBoxLayout" name="horizontalLayout_60">
+            <item>
+             <widget class="QFrame" name="frame_134">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_70">
+               <property name="spacing">
+                <number>0</number>
                </property>
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>55</height>
-                </size>
+               <property name="leftMargin">
+                <number>350</number>
                </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+               <property name="topMargin">
+                <number>0</number>
                </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
+               <property name="rightMargin">
+                <number>350</number>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_72">
-                <item>
-                 <widget class="QLabel" name="label_74">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>55</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">color: rgb(0,0,0);
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_142">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_72">
+                  <item>
+                   <widget class="QLabel" name="label_74">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <property name="text">
+                     <string>Agregar Cita</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_148">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_75">
+                  <item>
+                   <widget class="QFrame" name="frame_149">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_124">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_80">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                  </property>
-                  <property name="text">
-                   <string>Agregar Cita</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_148">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_75">
-                <item>
-                 <widget class="QFrame" name="frame_149">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_124">
-                   <item>
-                    <widget class="QLabel" name="label_80">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                       </property>
+                       <property name="text">
+                        <string>Horario:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="horarioCita_le"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="descripcionCita_le">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_126">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_81">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Descripcion:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="descripcionCita_ln"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_151">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_127">
+                     <property name="leftMargin">
+                      <number>100</number>
                      </property>
-                     <property name="text">
-                      <string>Horario:</string>
+                     <property name="rightMargin">
+                      <number>100</number>
                      </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="horarioCita_le"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="descripcionCita_le">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_126">
-                   <item>
-                    <widget class="QLabel" name="label_81">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                     <item>
+                      <widget class="QLabel" name="label_82">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Paciente:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="pacienteCita_le"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_78">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_128">
+                     <property name="leftMargin">
+                      <number>100</number>
                      </property>
-                     <property name="text">
-                      <string>Descripcion:</string>
+                     <property name="rightMargin">
+                      <number>100</number>
                      </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="descripcionCita_ln"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="frame_151">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_127">
-                   <item>
-                    <widget class="QLabel" name="label_82">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                     <item>
+                      <widget class="QLabel" name="label_83">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                     </property>
-                     <property name="text">
-                      <string>Paciente:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="pacienteCita_le"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="frame_78">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_128">
-                   <item>
-                    <widget class="QLabel" name="label_83">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                     </property>
-                     <property name="text">
-                      <string>Doctor:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="doctorCita_le"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_156">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_130">
-                <item>
-                 <spacer name="horizontalSpacer_23">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>351</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="agCita_btn">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>150</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QFrame{
+                       </property>
+                       <property name="text">
+                        <string>Doctor:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="doctorCita_le"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_156">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_130">
+                  <item>
+                   <spacer name="horizontalSpacer_23">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>351</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="agCita_btn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>45</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>150</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QFrame{
 background-color: rgb(51, 157, 255);
 }
 
@@ -3842,269 +3902,277 @@ border-top-left-radius:10px;
 border-top-right-radius:10px;
 font: 75 9pt  &quot;Open Sans Semibold&quot;
 }</string>
-                  </property>
-                  <property name="text">
-                   <string>Agregar</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>55</width>
-                    <height>50</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
+                    </property>
+                    <property name="text">
+                     <string>Agregar</string>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>55</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
           </widget>
           <widget class="QWidget" name="page_actualizar_Cita">
-           <widget class="QFrame" name="frame_124">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>10</y>
-              <width>1292</width>
-              <height>691</height>
-             </rect>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_76">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="leftMargin">
-              <number>350</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>350</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QFrame" name="frame_128">
-               <property name="minimumSize">
-                <size>
-                 <width>0</width>
-                 <height>55</height>
-                </size>
+           <layout class="QVBoxLayout" name="verticalLayout_48">
+            <item>
+             <widget class="QFrame" name="frame_124">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_76">
+               <property name="spacing">
+                <number>0</number>
                </property>
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>55</height>
-                </size>
+               <property name="leftMargin">
+                <number>350</number>
                </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+               <property name="topMargin">
+                <number>0</number>
                </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
+               <property name="rightMargin">
+                <number>350</number>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_77">
-                <item>
-                 <widget class="QLabel" name="label_67">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>55</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                  </property>
-                  <property name="text">
-                   <string>Actualizar Cita</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_130">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+               <property name="bottomMargin">
+                <number>0</number>
                </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_79">
-                <item>
-                 <widget class="QFrame" name="frame_150">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_87">
-                   <item>
-                    <widget class="QLabel" name="label_71">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                     </property>
-                     <property name="text">
-                      <string>id</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="idActualizarCita_le"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="frame_152">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <widget class="QLabel" name="label_72">
-                   <property name="geometry">
-                    <rect>
-                     <x>10</x>
-                     <y>70</y>
-                     <width>70</width>
-                     <height>16</height>
-                    </rect>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                   </property>
-                   <property name="text">
-                    <string>Columna</string>
-                   </property>
-                  </widget>
-                  <widget class="QComboBox" name="datoCambiarCita_box">
-                   <property name="geometry">
-                    <rect>
-                     <x>90</x>
-                     <y>70</y>
-                     <width>451</width>
-                     <height>18</height>
-                    </rect>
-                   </property>
-                   <item>
-                    <property name="text">
-                     <string>horario</string>
+               <item>
+                <widget class="QFrame" name="frame_128">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_77">
+                  <item>
+                   <widget class="QLabel" name="label_67">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>55</height>
+                     </size>
                     </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>descripcion</string>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
-                   </item>
-                   <item>
                     <property name="text">
-                     <string>doctor</string>
+                     <string>Actualizar Cita</string>
                     </property>
-                   </item>
-                   <item>
-                    <property name="text">
-                     <string>Paciente</string>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
                     </property>
-                   </item>
-                  </widget>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QFrame" name="frame_154">
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QHBoxLayout" name="horizontalLayout_93">
-                   <item>
-                    <widget class="QLabel" name="label_86">
-                     <property name="styleSheet">
-                      <string notr="true">color: rgb(0,0,0);
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_130">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_79">
+                  <item>
+                   <widget class="QFrame" name="frame_150">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_87">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_71">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Id:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="idActualizarCita_le"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_152">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_59">
+                     <property name="leftMargin">
+                      <number>100</number>
                      </property>
-                     <property name="text">
-                      <string>Nuevo Valor</string>
+                     <property name="rightMargin">
+                      <number>100</number>
                      </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLineEdit" name="nuevoValorCita_le"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_161">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_95">
-                <item>
-                 <spacer name="horizontalSpacer_24">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>351</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="actualizarCita_btn">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>150</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QFrame{
+                     <item>
+                      <widget class="QLabel" name="label_72">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Columna:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="datoCambiarCita_box">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Horario</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Descripción</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Doctor</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Paciente</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_154">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_93">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_86">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Nuevo Valor:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="nuevoValorCita_le"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_161">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_95">
+                  <item>
+                   <spacer name="horizontalSpacer_24">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>351</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="actualizarCita_btn">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>45</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>150</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QFrame{
 background-color: rgb(51, 157, 255);
 }
 
@@ -4124,27 +4192,29 @@ border-top-left-radius:10px;
 border-top-right-radius:10px;
 font: 75 9pt  &quot;Open Sans Semibold&quot;
 }</string>
-                  </property>
-                  <property name="text">
-                   <string>Actualizar</string>
-                  </property>
-                  <property name="icon">
-                   <iconset>
-                    <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>55</width>
-                    <height>50</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
+                    </property>
+                    <property name="text">
+                     <string>Actualizar</string>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>Iconos Farmacia/y (1).png</normaloff>Iconos Farmacia/y (1).png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>55</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
           </widget>
           <widget class="QWidget" name="page_historial_clinico">
            <layout class="QVBoxLayout" name="verticalLayout_31">
@@ -4816,6 +4886,400 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
             </item>
            </layout>
           </widget>
+          <widget class="QWidget" name="page_agrega_historial">
+           <layout class="QHBoxLayout" name="horizontalLayout_61">
+            <item>
+             <widget class="QFrame" name="frame_162">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_80">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>350</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>350</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_163">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_81">
+                  <item>
+                   <widget class="QLabel" name="label_89">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>55</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
+                    </property>
+                    <property name="text">
+                     <string>Agregar historial clínico</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_164">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_49">
+                  <item>
+                   <widget class="QFrame" name="frame_166">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_129">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_97">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Nombre:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="horarioCita_le_2"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="descripcionCita_le_2">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_131">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_98">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Edad:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="descripcionCita_ln_2"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_169">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_132">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_99">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Sexo:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="pacienteCita_le_2"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_79">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_133">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_100">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Tipo de sangre:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="doctorCita_le_2"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_80">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_137">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_107">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Enfermedades hereditarias:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="doctorCita_le_4"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_82">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_151">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_109">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Padecimientos previos:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="doctorCita_le_6"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_81">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_144">
+                     <property name="leftMargin">
+                      <number>100</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_108">
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Alergias:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="doctorCita_le_5"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_170">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_134">
+                  <item>
+                   <spacer name="horizontalSpacer_25">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>351</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="agCita_btn_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>45</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>150</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QFrame{
+background-color: rgb(51, 157, 255);
+}
+
+QPushButton{
+color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius:20px;
+font: 75 9pt &quot;Open Sans Semibold&quot;
+}
+
+QPushButton:hover{
+color: rgb(255, 255, 255);
+background-color: rgb(160, 207, 41);
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+font: 75 9pt  &quot;Open Sans Semibold&quot;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Agregar</string>
+                    </property>
+                    <property name="icon">
+                     <iconset>
+                      <normaloff>Iconos Farmacia/x.png</normaloff>Iconos Farmacia/x.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>55</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page"/>
           <widget class="QWidget" name="page_cita">
            <layout class="QVBoxLayout" name="verticalLayout_40">
             <item>
@@ -7282,8 +7746,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                   <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                   </property>
                   <property name="text">
                    <string>Agregar receta</string>
@@ -7647,8 +8111,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                   <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                   </property>
                   <property name="text">
                    <string>Actualizar Información Receta</string>
@@ -7936,8 +8400,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
                     <property name="text">
                      <string>Agregar Doctor</string>
@@ -8201,8 +8665,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                     <string notr="true">color: rgb(0, 0, 0);
+font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                     </property>
                     <property name="text">
                      <string>Actualizar Información Doctor</string>
@@ -8246,7 +8710,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                        </property>
                        <property name="text">
-                        <string>ID:</string>
+                        <string>Id:</string>
                        </property>
                       </widget>
                      </item>
