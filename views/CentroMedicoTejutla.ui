@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1348</width>
-    <height>853</height>
+    <width>1343</width>
+    <height>893</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_7">
+   <layout class="QHBoxLayout" name="horizontalLayout_66">
     <item>
      <widget class="QFrame" name="frame">
       <property name="styleSheet">
@@ -26,8 +26,8 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
         <widget class="QFrame" name="frame_4">
          <property name="minimumSize">
           <size>
@@ -182,7 +182,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
          </layout>
         </widget>
        </item>
-       <item>
+       <item row="1" column="0">
         <widget class="QFrame" name="frame_2">
          <property name="maximumSize">
           <size>
@@ -4420,7 +4420,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_141">
                           <item>
-                           <widget class="QTableWidget" name="tableWidget_20">
+                           <widget class="QTableWidget" name="tablahistorial">
                             <property name="styleSheet">
                              <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
                             </property>
@@ -4490,7 +4490,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="cargar_invetario_24">
+                              <widget class="QPushButton" name="cargar_histo">
                                <property name="minimumSize">
                                 <size>
                                  <width>200</width>
@@ -4806,7 +4806,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                               </spacer>
                              </item>
                              <item>
-                              <widget class="QPushButton" name="btn_eliminar_C_21">
+                              <widget class="QPushButton" name="btn_eliminar_histo">
                                <property name="minimumSize">
                                 <size>
                                  <width>200</width>
@@ -4884,6 +4884,9 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
              <layout class="QHBoxLayout" name="horizontalLayout_61">
               <item>
                <widget class="QFrame" name="frame_162">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -4958,72 +4961,8 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_49">
-                    <item>
-                     <widget class="QFrame" name="frame_166">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_129">
-                       <property name="leftMargin">
-                        <number>100</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_97">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Nombre:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="horarioCita_le_2"/>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QFrame" name="descripcionCita_le_2">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_131">
-                       <property name="leftMargin">
-                        <number>100</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_98">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Edad:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="descripcionCita_ln_2"/>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
+                   <layout class="QGridLayout" name="gridLayout_2">
+                    <item row="3" column="0">
                      <widget class="QFrame" name="frame_169">
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -5031,63 +4970,36 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_132">
-                       <property name="leftMargin">
-                        <number>100</number>
+                      <widget class="QLabel" name="label_99">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>33</width>
+                         <height>16</height>
+                        </rect>
                        </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_99">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Sexo:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="pacienteCita_le_2"/>
-                       </item>
-                      </layout>
+                       </property>
+                       <property name="text">
+                        <string>Sexo:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="sexoHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>140</x>
+                         <y>21</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
                      </widget>
                     </item>
-                    <item>
-                     <widget class="QFrame" name="frame_79">
-                      <property name="frameShape">
-                       <enum>QFrame::StyledPanel</enum>
-                      </property>
-                      <property name="frameShadow">
-                       <enum>QFrame::Raised</enum>
-                      </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_133">
-                       <property name="leftMargin">
-                        <number>100</number>
-                       </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_100">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
-font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Tipo de sangre:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="doctorCita_le_2"/>
-                       </item>
-                      </layout>
-                     </widget>
-                    </item>
-                    <item>
+                    <item row="5" column="0">
                      <widget class="QFrame" name="frame_80">
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -5095,31 +5007,110 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_137">
-                       <property name="leftMargin">
-                        <number>100</number>
+                      <widget class="QLabel" name="label_107">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>159</width>
+                         <height>16</height>
+                        </rect>
                        </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_107">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Enfermedades hereditarias:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="doctorCita_le_4"/>
-                       </item>
-                      </layout>
+                       </property>
+                       <property name="text">
+                        <string>Enfermedades hereditarias:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="enfHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>266</x>
+                         <y>21</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
                      </widget>
                     </item>
-                    <item>
+                    <item row="2" column="0">
+                     <widget class="QFrame" name="descripcionCita_le_2">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_98">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>33</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Edad:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="edadHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>140</x>
+                         <y>21</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QFrame" name="frame_166">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_97">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>50</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Nombre:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="nombreHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>157</x>
+                         <y>10</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="6" column="0">
                      <widget class="QFrame" name="frame_82">
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -5127,31 +5118,36 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_151">
-                       <property name="leftMargin">
-                        <number>100</number>
+                      <widget class="QLabel" name="label_109">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>132</width>
+                         <height>16</height>
+                        </rect>
                        </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_109">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Padecimientos previos:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="doctorCita_le_6"/>
-                       </item>
-                      </layout>
+                       </property>
+                       <property name="text">
+                        <string>Padecimientos previos:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="padHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>239</x>
+                         <y>21</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
                      </widget>
                     </item>
-                    <item>
+                    <item row="7" column="0">
                      <widget class="QFrame" name="frame_81">
                       <property name="frameShape">
                        <enum>QFrame::StyledPanel</enum>
@@ -5159,28 +5155,144 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QHBoxLayout" name="horizontalLayout_144">
-                       <property name="leftMargin">
-                        <number>100</number>
+                      <widget class="QLabel" name="label_108">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>51</width>
+                         <height>16</height>
+                        </rect>
                        </property>
-                       <property name="rightMargin">
-                        <number>100</number>
-                       </property>
-                       <item>
-                        <widget class="QLabel" name="label_108">
-                         <property name="styleSheet">
-                          <string notr="true">color: rgb(0,0,0);
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
-                         </property>
-                         <property name="text">
-                          <string>Alergias:</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="doctorCita_le_5"/>
-                       </item>
-                      </layout>
+                       </property>
+                       <property name="text">
+                        <string>Alergias:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="alergiaHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>160</x>
+                         <y>10</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QFrame" name="frame_79">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_100">
+                       <property name="geometry">
+                        <rect>
+                         <x>101</x>
+                         <y>10</y>
+                         <width>91</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Tipo de sangre:</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="tipoHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>198</x>
+                         <y>21</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="8" column="0">
+                     <widget class="QFrame" name="frame_193">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_135">
+                       <property name="geometry">
+                        <rect>
+                         <x>100</x>
+                         <y>10</y>
+                         <width>71</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>ID_paciente</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="id_paHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>180</x>
+                         <y>10</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item row="9" column="0">
+                     <widget class="QFrame" name="frame_173">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QLabel" name="label_101">
+                       <property name="geometry">
+                        <rect>
+                         <x>100</x>
+                         <y>10</y>
+                         <width>81</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(0,0,0);
+font: 75 10pt &quot;Open Sans Semibold&quot;</string>
+                       </property>
+                       <property name="text">
+                        <string>Obsevaciones</string>
+                       </property>
+                      </widget>
+                      <widget class="QLineEdit" name="obseHistorial_le">
+                       <property name="geometry">
+                        <rect>
+                         <x>190</x>
+                         <y>10</y>
+                         <width>133</width>
+                         <height>20</height>
+                        </rect>
+                       </property>
+                      </widget>
                      </widget>
                     </item>
                    </layout>
@@ -5215,7 +5327,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="agCita_btn_2">
+                     <widget class="QPushButton" name="aghisto_btn">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -10300,7 +10412,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
          </layout>
         </widget>
        </item>
-       <item>
+       <item row="2" column="0">
         <widget class="QFrame" name="frame_modulos">
          <property name="minimumSize">
           <size>

@@ -98,6 +98,13 @@ class VentanaPrincipal(QMainWindow):
         self.tablaCita.cellClicked.connect(self.click_tabla_cita)
 
 
+        self.aghisto_btn.clicked.connect(self.registrar_historia)
+        #self.actualizarCita_btn.clicked.connect(self.actualizar_cita)
+        self.cargar_histo.clicked.connect(self.carga_tabla_historial)
+        self.btn_eliminar_histo.clicked.connect(self.eliminar_historia)
+        self.tablahistorial.cellClicked.connect(self.click_tabla_historia)
+
+
 
     # Funcionalidad de botones
 
@@ -834,5 +841,112 @@ class VentanaPrincipal(QMainWindow):
                 self.tablaCita.setItem(i, 1, QTableWidgetItem(str(dato[i][2])))
                 self.tablaCita.setItem(i, 2, QTableWidgetItem(str(vie_Ca)))
                 self.tablaCita.setItem(i, 3, QTableWidgetItem(str(vie_Can)))
+        except Exception as e:
+            print(e)
+
+    def registrar_historia(self):
+        try:
+            historial = sql_structures.Historial_clinico(self.nombreHistorial_le.text(),
+                                               self.edadHistorial_le.text(),
+                                               self.sexoHistorial_le.text(),
+                                               self.tipoHistorial_le.text(),
+                                               self.enfHistorial_le.text(),
+                                               self.padHistorial_le.text(),
+                                               self.alergiaHistorial_le.text(),
+                                               self.id_paHistorial_le.text(),
+                                               self.obseHistorial_le.text())
+            historial.management('ag_historial')
+            self.nombreHistorial_le.clear()
+            self.edadHistorial_le.clear()
+            self.sexoHistorial_le.clear()
+            self.tipoHistorial_le.clear()
+            self.enfHistorial_le.clear()
+            self.padHistorial_le.clear()
+            self.alergiaHistorial_le.clear()
+            self.id_paHistorial_le.clear()
+            self.obseHistorial_le.clear()
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+
+    # def actualizar_pacientes(self):
+    #     try:
+    #         paciente = sql_structures.Paciente('',
+    #                                            '',
+    #                                            '',
+    #                                            '',
+    #                                            '',
+    #                                            self.datoCambiarPac_box.currentText(),
+    #                                            self.nuevoValorPac_le.text(),
+    #                                            self.idActualizarPac_le.text())
+    #         paciente.management('up_paciente')
+    #         QMessageBox.about(self, 'Aviso', 'Actualizado correctamente!')
+    #     except Exception as e:
+    #         print(e)
+    #         QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+
+    def eliminar_historia(self):
+        try:
+            historial = sql_structures.Historial_clinico('',
+                                               '',
+                                               '',
+                                               '',
+                                               '',
+                                               '',
+                                               '','',
+                                               '','',
+                                               '',
+                                               self.id_c)
+            historial.management('del_historial')
+            QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Eliminacion fallida!')
+        self.carga_tabla_pacientes()
+
+    def click_tabla_historia(self, row, column):
+        manager = sql_structures.Manager()
+        item = self.tablahistorial.item(row, column)
+        value = item.text()
+        columns_ingreso = ['id', 'nombre', 'edad', 'sexo', 'tipoSangre', 'enfHereditarias', 'padPrevios', 'alergias',
+                             'paciente_id', 'observaciones']
+        header_item = self.tablahistorial.horizontalHeaderItem(column)
+        column_name = header_item.text()
+
+        if column_name == 'Nombre':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'nombre')
+        elif column_name == 'Edad':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'edad')
+        elif column_name == 'Sexo':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'sexo')
+        elif column_name == 'Tipo de Sangre':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'tipoSangre')
+        elif column_name == 'Enfermedades Hereditarias':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'enfHereditarias')
+        elif column_name == 'Padecimientos previos':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'padPrevios')
+        elif column_name == 'Alergias':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'alergias')
+        elif column_name == 'paciente_id':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'paciente_id')
+        elif column_name == 'observaciones':
+            self.id_c = manager.get('historialClinico', columns_ingreso, value, 'observaciones')
+
+    def carga_tabla_historial(self):
+        try:
+            mana = sql_structures.Manager()
+            dato = mana.print_table('historialClinico')
+            self.tablahistorial.setRowCount(len(dato))
+            for i in range(len(dato)):
+                self.tablahistorial.setItem(i, 0, QTableWidgetItem(str(dato[i][1])))
+                self.tablahistorial.setItem(i, 1, QTableWidgetItem(str(dato[i][2])))
+                self.tablahistorial.setItem(i, 2, QTableWidgetItem(str(dato[i][3])))
+                self.tablahistorial.setItem(i, 3, QTableWidgetItem(str(dato[i][4])))
+                self.tablahistorial.setItem(i, 4, QTableWidgetItem(str(dato[i][5])))
+                self.tablahistorial.setItem(i, 5, QTableWidgetItem(str(dato[i][6])))
+                self.tablahistorial.setItem(i, 6, QTableWidgetItem(str(dato[i][7])))
+                self.tablahistorial.setItem(i, 7, QTableWidgetItem(str(dato[i][8])))
+                self.tablahistorial.setItem(i, 8, QTableWidgetItem(str(dato[i][9])))
         except Exception as e:
             print(e)

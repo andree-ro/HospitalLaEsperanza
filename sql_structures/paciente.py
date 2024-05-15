@@ -3,6 +3,7 @@ from .manager import Manager
 columns_ingreso = ['id', 'nombre', 'telefono', 'dpi', 'direccion', 'telefono2']
 columns_ingreso_c = ['id', 'horario', 'descripcion', 'paciente_id', 'doctor_id']
 
+
 class Paciente:
     def __init__(self, nombre, telefono, dpi, direccion, telefono2, columna=None, valor=None, noPaciente=None):
         self.nombre = nombre
@@ -39,6 +40,7 @@ class Paciente:
     def __str__(self):
         return f"{self.nombre}, {self.telefono}, {self.dpi}, {self.direccion}, {self.telefono2}"
 
+
 class Cita:
     def __init__(self, horario, descripcion, paciente_id, doctor_id, columna=None, valor=None, noCita=None):
         self.horario = horario
@@ -73,3 +75,52 @@ class Cita:
 
     def __str__(self):
         return f"{self.horario}, {self.descripcion}, {self.paciente_id}, {self.doctor_id}"
+
+
+columns_ingreso_h = ['id', 'nombre', 'edad', 'sexo', 'tipoSangre', 'enfHereditarias', 'padPrevios', 'alergias',
+                     'paciente_id', 'observaciones']
+
+
+class Historial_clinico:
+    def __init__(self, nombre, edad, sexo, tipoSangre, enfHereditarias, padPrevios, alergias, paciente_id,
+                 observaciones, columna=None, valor=None, noHistoria=None):
+        self.nombre = nombre
+        self.edad = edad
+        self.sexo = sexo
+        self.tipoSangre = tipoSangre
+        self.enfHereditarias = enfHereditarias
+        self.padPrevios = padPrevios
+        self.alergias = alergias
+        self.paciente_id = paciente_id
+        self.observaciones = observaciones
+        self.columna = columna
+        self.valor = valor
+        self.noHistoria = noHistoria
+
+    def management(self, action):
+        if action == 'ag_historial':
+            self.historia_ag()
+        elif action == 'up_historial':
+            self.historia_update()
+        elif action == 'del_historial':
+            self.historia_delete()
+
+    def historia_update(self):
+        management = Manager()
+        management.update_table_with_id('historialClinico', columns_ingreso, self.columna, self.valor, self.noHistoria)
+
+    def historia_ag(self):
+        management = Manager()
+        data_list = [self.nombre, self.edad, self.sexo, self.tipoSangre, self.enfHereditarias, self.padPrevios,
+                     self.alergias,
+                     self.paciente_id, self.observaciones]
+        management.insert_into_table('historialClinico', columns_ingreso, data_list)
+        # management.print_table('cliente')
+
+    def historia_delete(self):
+        management = Manager()
+        management.delete_id_row('historialClinico', columns_ingreso, self.noHistoria)
+
+    def __str__(self):
+        return (f"{self.nombre}, {self.edad}, {self.sexo}, {self.tipoSangre}, {self.enfHereditarias}, "
+                f"{self.padPrevios}, {self.alergias}, {self.paciente_id}, {self.observaciones}")
