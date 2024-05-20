@@ -77,6 +77,7 @@ class VentanaPrincipal(QMainWindow):
         self.realizado_facturacion.clicked.connect(self.generarFactura)
         self.agregarCotizacion.clicked.connect(self.agregar_a_cotizacion)
         self.realizado_cotizacion.clicked.connect(self.generarCotizacion)
+        self.realizado_faccita.clicked.connect(self.generarFacturaCita)
 
         # Receta
         self.agregarReceta_btn.clicked.connect(self.registrar_receta)
@@ -590,6 +591,38 @@ class VentanaPrincipal(QMainWindow):
         self.acumulador += 1
         self.registrar_cotizacion()
 
+    def generarFacturaCita(self):
+        now = datetime.now()
+        formato = now.strftime('%d - %m - %Y')
+        # crear pdf
+        pdf = canvas.Canvas(f"facturaCita{self.idFactura}.pdf")
+        pdf.setFont("Helvetica", 12)
+        nombre = str(self.nombreFaccita_le.text())
+        nit = str(self.nitFaccita_le.text())
+        direccion = str(self.direccionFaccita_le.text())
+        motivo = str(self.motivofaccita_le.text())
+        total = str(self.totalfaccita_le.text())
+        idFactura = f"{self.today.day}{self.today.month}{self.acumulador}"
+
+        pdf.drawString(100, 700, "Nombre: " + str(nombre))
+        pdf.drawString(100, 680, "NIT: " + str(nit))
+        pdf.drawString(100, 660, "Dirección: " + str(direccion))
+        pdf.drawString(400, 700, "Factura:" + str(idFactura))
+        pdf.drawString(400, 680, "Fecha:" + str(formato))
+        pdf.drawString(50, 620, motivo)
+
+        y = 600  # Posición vertical inicial
+        for producto in self.productos:
+            if y < 50:  # Ejemplo de margen inferior
+                break  # Salir del bucle si la posición y es demasiado baja
+            y -= 20
+        pdf.drawString(400, y - 20, "Total: " + str(total))
+        pdf.save()
+        factura = f"facturaCita{self.idFactura}.pdf"
+        webbrowser.open_new(factura)
+        self.productos.clear()
+        self.total = 0
+        self.acumulador += 1
 
     # Ventas factura
     def registrar_factura(self):
