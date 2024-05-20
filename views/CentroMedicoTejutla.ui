@@ -218,7 +218,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>14</number>
+             <number>10</number>
             </property>
             <widget class="QWidget" name="page_farmacia">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -14637,7 +14637,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                    </spacer>
                   </item>
                   <item>
-                   <widget class="QPushButton" name="btn_detalles_venta_2">
+                   <widget class="QPushButton" name="generarFacCitas">
                     <property name="minimumSize">
                      <size>
                       <width>150</width>
@@ -15026,10 +15026,10 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                           <widget class="QLineEdit" name="Motivofaccita_le">
                            <property name="geometry">
                             <rect>
-                             <x>130</x>
+                             <x>110</x>
                              <y>50</y>
-                             <width>211</width>
-                             <height>20</height>
+                             <width>241</width>
+                             <height>111</height>
                             </rect>
                            </property>
                           </widget>
