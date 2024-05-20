@@ -6,12 +6,7 @@ from reportlab.pdfgen import canvas
 
 import sql_structures
 from datetime import *
-import pandas as pd
-from reportlab.lib.pagesizes import legal, landscape
-from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
-import os
-from encrypt import *
+
 
 
 class VentanaPrincipal(QMainWindow):
@@ -416,10 +411,15 @@ class VentanaPrincipal(QMainWindow):
 
     # FACTURAS
     def agregar_a_Factura(self):
-        producto = self.productoFac_txt.text()
-        cantidad = int(self.cantidadFac_txt.text())
-        precioUnidad = float(self.precioFac_text.text())
+        print('1')
+        producto = self.productofactura_le.text()
+        print('1')
+        cantidad = int(self.cantidadFactura_le.text())
+        print('1')
+        precioUnidad = float(self.precioFactura_le.text())
+        print('2')
         if self.aux == 0:
+            print('3')
             self.productos.append({
                 "cantidad": cantidad,
                 "producto": producto,
@@ -428,6 +428,7 @@ class VentanaPrincipal(QMainWindow):
             })
             self.aux = 1
         else:
+            print('4')
             encontrado = False
             for p in self.productos:
 
@@ -448,9 +449,9 @@ class VentanaPrincipal(QMainWindow):
                     "precioUnidad": precioUnidad,
                     "subtotal": (cantidad * precioUnidad)
                 })
-        self.productoFac_txt.clear()
-        self.cantidadFac_txt.clear()
-        self.precioFac_text.clear()
+        self.productofactura_le.clear()
+        self.cantidadFactura_le.clear()
+        self.precioFactura_le.clear()
 
     def generarFactura(self):
         now = datetime.now()
@@ -458,10 +459,10 @@ class VentanaPrincipal(QMainWindow):
         # crear pdf
         pdf = canvas.Canvas(f"factura{self.idFactura}.pdf")
         pdf.setFont("Helvetica", 12)
-        usuario = str(self.usuarioFactura_txt.text())
-        nombre = str(self.nombreFac_txt.text())
-        nit = str(self.nitFac_txt.text())
-        direccion = str(self.direccionFac_txt.text())
+        usuario = str(self.usuarioVenta_le.text())
+        nombre = str(self.nombreVenta_le.text())
+        nit = str(self.nitVenta_le.text())
+        direccion = str(self.direccionVenta_le.text())
         idFactura = f"{self.today.day}{self.today.month}{self.acumulador}"
 
         pdf.drawString(100, 720, "Usuario" + str(usuario))
@@ -497,11 +498,11 @@ class VentanaPrincipal(QMainWindow):
 
     def agregar_a_cotizacion(self):
         print('1')
-        producto = str(self.productoCot_text.text())
+        producto = str(self.productoCotizacion_le.text())
         print('1')
-        cantidad = int(self.cantidadCot_text.text())
+        cantidad = int(self.cantidadCotizacion_le.text())
         print('1')
-        precioUnidad = float(self.precioCot_text.text())
+        precioUnidad = float(self.precioCotizacion_le.text())
         print('1')
         if self.aux == 0:
             self.productos.append({
@@ -538,9 +539,9 @@ class VentanaPrincipal(QMainWindow):
                     "subtotal": (cantidad * precioUnidad)
                 })
                 print('1')
-        self.productoCot_text.clear()
-        self.cantidadCot_text.clear()
-        self.precioCot_text.clear()
+        self.productoCotizacion_le.clear()
+        self.cantidadCotizacion_le.clear()
+        self.precioCotizacion_le.clear()
 
     def generarCotizacion(self):
         now = datetime.now()
@@ -548,10 +549,10 @@ class VentanaPrincipal(QMainWindow):
         # crear pdf
         pdf = canvas.Canvas(f"cotizacion.pdf")
         pdf.setFont("Helvetica", 12)
-        usuario = str(self.usuarioFactura_txt.text())
-        nombre = str(self.nombreFac_txt.text())
-        nit = str(self.nitFac_txt.text())
-        direccion = str(self.direccionFac_txt.text())
+        usuario = str(self.usuarioVenta_le.text())
+        nombre = str(self.nombreVenta_le.text())
+        nit = str(self.nitVenta_le.text())
+        direccion = str(self.direccionVenta_le.text())
 
         pdf.drawString(100, 720, "Usuario" + str(usuario))
         pdf.drawString(100, 700, "Nombre: " + str(nombre))
