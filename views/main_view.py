@@ -65,7 +65,7 @@ class VentanaPrincipal(QMainWindow):
         self.tablaPaciente.cellClicked.connect(self.click_tabla_pacientes)
         self.btn_historial.clicked.connect(self.show_page_historial)
         self.btn_agregar_historial.clicked.connect(self.show_page_agregar_historial)
-        self.btn_factura.clicked.connect(self.show_page_factura)
+        self.btn_factura_cita.clicked.connect(self.show_page_factura)
 
 
         # botones venta
@@ -98,6 +98,8 @@ class VentanaPrincipal(QMainWindow):
         self.cargar_histo.clicked.connect(self.carga_tabla_historial)
         self.btn_eliminar_histo.clicked.connect(self.eliminar_historia)
         self.tablahistorial.cellClicked.connect(self.click_tabla_historia)
+
+        self.realizado_faccita.clicked.connect(self.registrar_factura_ci)
 
 
 
@@ -161,7 +163,10 @@ class VentanaPrincipal(QMainWindow):
         self.stackedWidget.setCurrentWidget(self.page_agrega_historial)
 
     def show_page_factura(self):
-        self.stackedWidget.setCurrentWidget(self.page_factura)
+        self.stackedWidget.setCurrentWidget(self.page_Factura_Citas)
+
+    # def show_page_factura_cita(self):
+    #     self.stackedWidget.setCurrentWidget(self.page_Factura_Citas)
 
     # Doctor
     def registrar_doctor(self):
@@ -951,3 +956,29 @@ class VentanaPrincipal(QMainWindow):
                 self.tablahistorial.setItem(i, 8, QTableWidgetItem(str(dato[i][9])))
         except Exception as e:
             print(e)
+
+    def registrar_factura_ci(self):
+        try:
+            columns_ingreso = ['id', 'horario', 'descripcion', 'paciente_id', 'doctor_id']
+            columna = ['id', 'nombre', 'telefono', 'dpi', 'direccion', 'telefono2']
+            pro = self.nombreFaccita_le.text()
+            mana = sql_structures.Manager()
+            id_pa = mana.get("Paciente", columna, pro, "nombre")
+            id_far = mana.get("citas", columns_ingreso, id_pa, "id")
+            print(id_far)
+            factu = sql_structures.Factura_ci(self.nombreFaccita_le.text(),
+                                               self.nitFaccita_le.text(),
+                                               self.direccionFaccita_le.text(),
+                                               self.Motivofaccita_le.text(),
+                                                self.totalfaccita_le.text(),
+                                               id_far)
+            factu.management('ag_factura_ci')
+            self.nombreFaccita_le.clear()
+            self.nitFaccita_le.clear()
+            self.direccionFaccita_le.clear()
+            self.Motivofaccita_le.clear()
+            self.totalfaccita_le.clear()
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')

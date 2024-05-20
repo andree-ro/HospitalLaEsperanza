@@ -124,3 +124,43 @@ class Historial_clinico:
     def __str__(self):
         return (f"{self.nombre}, {self.edad}, {self.sexo}, {self.tipoSangre}, {self.enfHereditarias}, "
                 f"{self.padPrevios}, {self.alergias}, {self.paciente_id}, {self.observaciones}")
+
+columns_ingreso_f = ['id', 'nombre', 'nit', 'direccion', 'cita', 'total', 'cita_id']
+
+class Factura_ci:
+    def __init__(self, nombre, nit, direccion, cita, total, cita_id, columna=None, valor=None, noFactura_ci=None):
+        self.nombre = nombre
+        self.nit = nit
+        self.direccion = direccion
+        self.cita = cita
+        self.total = total
+        self.cita_id = cita_id
+        self.columna = columna
+        self.valor = valor
+        self.noFactura_ci = noFactura_ci
+
+    def management(self, action):
+        if action == 'ag_factura_ci':
+            self.factura_ag()
+        # elif action == 'up_factura':
+        #     self.factura_update()
+        # elif action == 'del_factura':
+        #     self.factura_delete()
+
+    # def factura_update(self):
+    #     management = Manager()
+    #     management.update_table_with_id('factura', columns_ingreso_f, self.columna, self.valor, self.noFactura)
+
+    def factura_ag(self):
+        management = Manager()
+        data_list = [self.nombre, self.nit, self.direccion, self.cita, self.total, self.cita_id]
+        management.insert_into_table('factura_cita', columns_ingreso_f, data_list)
+        #management.print_table('factura_cita')
+
+    # def factura_delete(self):
+    #     management = Manager()
+    #     management.delete_id_row('factura', columns_ingreso_f, self.noFactura)
+
+    def __str__(self):
+        return (f"{self.nombre}, {self.nit}, {self.direccion}, {self.cita}, {self.total}, "
+                f"{self.cita_id}")
