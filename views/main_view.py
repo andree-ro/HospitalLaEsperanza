@@ -111,21 +111,26 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_farmacia(self):
         self.stackedWidget.setCurrentWidget(self.page_farmacia)
+        self.carga_tabla_medicamento()
 
     def show_page_venta (self):
         self.stackedWidget.setCurrentWidget(self.page_ventas)
 
     def show_page_paciente(self):
         self.stackedWidget.setCurrentWidget(self.page_paciente)
+        self.carga_tabla_pacientes()
 
     def show_page_doctor(self):
         self.stackedWidget.setCurrentWidget(self.page_doctor)
+        self.carga_tabla_doctor()
 
     def show_page_receta(self):
         self.stackedWidget.setCurrentWidget(self.page_receta)
+        self.carga_tabla_receta()
 
     def show_page_cita(self):
         self.stackedWidget.setCurrentWidget(self.page_cita)
+        self.carga_tabla_cita()
 
     def show_page_agregar_i(self):
         self.stackedWidget.setCurrentWidget(self.page_inventario)
@@ -159,6 +164,7 @@ class VentanaPrincipal(QMainWindow):
 
     def show_page_historial(self):
         self.stackedWidget.setCurrentWidget(self.page_historial_clinico)
+        self.carga_tabla_historial()
 
     def show_page_agregar_historial(self):
         self.stackedWidget.setCurrentWidget(self.page_agrega_historial)
@@ -183,6 +189,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_doctor()
 
     def actualizar_doctor(self):
         try:
@@ -199,6 +206,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+        self.show_page_doctor()
 
     def eliminar_doctor(self):
         try:
@@ -263,6 +271,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_farmacia()
 
     def actualizar_medicamento(self):
         try:
@@ -279,6 +288,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+        self.show_page_farmacia()
 
     def eliminar_medicamento(self):
         try:
@@ -348,6 +358,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_paciente()
 
     def actualizar_pacientes(self):
         try:
@@ -364,6 +375,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+        self.show_page_paciente()
 
     def eliminar_pacientes(self):
         try:
@@ -665,6 +677,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_farmacia()
 
     # Ventas cotizacion
     def registrar_cotizacion(self):
@@ -693,6 +706,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_farmacia()
 
 # receta
     def registrar_receta(self):
@@ -723,6 +737,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_receta()
 
     def actualizar_receta(self):
         try:
@@ -739,6 +754,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+        self.show_page_receta()
 
     def eliminar_receta(self):
         try:
@@ -820,6 +836,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_cita()
 
     def actualizar_cita(self):
         try:
@@ -834,6 +851,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error al actualizar!')
+        self.show_page_cita()
 
     def eliminar_cita(self):
         try:
@@ -908,6 +926,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_historial()
 
     # def actualizar_pacientes(self):
     #     try:
@@ -942,7 +961,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Eliminacion fallida!')
-        self.carga_tabla_pacientes()
+        self.carga_tabla_historial()
 
     def click_tabla_historia(self, row, column):
         manager = sql_structures.Manager()
@@ -1015,3 +1034,5 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_cita()
+
