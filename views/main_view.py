@@ -16,6 +16,7 @@ class VentanaPrincipal(QMainWindow):
         self.frame_modulos.hide()
 
         self.productos = []
+        self.recetas = []
         self.aux: int = 0
         self.idFactura = 0
         self.today = date.today()
@@ -100,6 +101,8 @@ class VentanaPrincipal(QMainWindow):
         self.tablahistorial.cellClicked.connect(self.click_tabla_historia)
 
         self.realizado_faccita.clicked.connect(self.registrar_factura_ci)
+
+        self.generarReceta_btn.clicked.connect(self.generarReceta)
 
 
 
@@ -1049,3 +1052,66 @@ class VentanaPrincipal(QMainWindow):
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
         self.show_page_cita()
 
+    # Receta
+
+
+    def generarReceta(self):
+        now = datetime.now()
+        formato = now.strftime('%d-%m-%Y')
+        medicamento = str(self.medicamentoReceta_le.text())
+        dosis = str(self.dosisReceta_le.text())
+        horario = str(self.horarioReceta_le.text())
+        descripcion = str(self.descripcionReceta_le.text())
+        doctor = str(self.docReceta_le.text())
+        paciente = str(self.pacReceta_le.text())
+
+        # Crear pdf
+        pdf = canvas.Canvas(f"{paciente}{formato}.pdf", pagesize=letter)
+        pdf.setFont("Helvetica", 12)
+
+        pdf.drawString(100, 700, "Nombre: " + paciente)
+        pdf.drawString(100, 660, "Doctor: " + doctor)
+        pdf.drawString(400, 680, "Fecha: " + formato)
+        pdf.drawString(50, 620, "DOSIS")
+        pdf.drawString(200, 620, "MEDICAMENTO")
+        pdf.drawString(350, 620, "HORARIO")
+        pdf.drawString(500, 620, "DESCRIPCION")
+
+        # Implementar salto de línea para el motivo
+        yPosicion = 600
+
+        # Dividir los textos por comas
+        dosis_list = dosis.split(",")
+        medicamento_list = medicamento.split(",")
+        horario_list = horario.split(",")
+        descripcion_list = descripcion.split(",")
+
+        max_lineas = max(len(dosis_list), len(medicamento_list), len(horario_list), len(descripcion_list))
+
+        for i in range(max_lineas):
+            dosis_line = dosis_list[i] if i < len(dosis_list) else ""
+            medicamento_line = medicamento_list[i] if i < len(medicamento_list) else ""
+            horario_line = horario_list[i] if i < len(horario_list) else ""
+            descripcion_line = descripcion_list[i] if i < len(descripcion_list) else ""
+
+            pdf.drawString(50, yPosicion, dosis_line)
+            pdf.drawString(200, yPosicion, medicamento_line)
+            pdf.drawString(350, yPosicion, horario_line)
+            pdf.drawString(500, yPosicion, descripcion_line)
+            yPosicion -= 20  # Ajustar el espacio entre líneas
+
+        # Posición vertical inicial para productos
+        y = yPosicion - 20
+        for producto in self.productos:
+            if y < 50:  # Ejemplo de margen inferior
+                break  # Salir del bucle si la posición y es demasiado baja
+            y -= 20
+            pdf.drawString(50, y, str(producto))  # Asumiendo que `producto` es una cadena
+
+        pdf.save()
+
+        factura = f"{paciente}{formato}.pdf"
+        webbrowser.open_new(factura)
+        self.productos.clear()
+        self.total = 0
+        self.acumulador += 1

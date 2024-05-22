@@ -218,7 +218,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="currentIndex">
-             <number>10</number>
+             <number>14</number>
             </property>
             <widget class="QWidget" name="page_farmacia">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -16770,6 +16770,9 @@ font: 75 9pt &quot;Open Sans Semibold&quot;</string>
                                <property name="text">
                                 <string>Usuario</string>
                                </property>
+                               <property name="echoMode">
+                                <enum>QLineEdit::Normal</enum>
+                               </property>
                               </widget>
                              </item>
                             </layout>
@@ -16863,7 +16866,7 @@ font: 75 9pt &quot;Open Sans Semibold&quot;</string>
                                 <string>Contraseña</string>
                                </property>
                                <property name="echoMode">
-                                <enum>QLineEdit::Normal</enum>
+                                <enum>QLineEdit::Password</enum>
                                </property>
                               </widget>
                              </item>
@@ -17654,8 +17657,8 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                <rect>
                 <x>10</x>
                 <y>10</y>
-                <width>1292</width>
-                <height>691</height>
+                <width>1369</width>
+                <height>417</height>
                </rect>
               </property>
               <property name="frameShape">
@@ -17955,6 +17958,13 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </size>
                     </property>
                    </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="generarReceta_btn">
+                    <property name="text">
+                     <string>Generar Receta</string>
+                    </property>
+                   </widget>
                   </item>
                   <item>
                    <widget class="QPushButton" name="agregarReceta_btn">
