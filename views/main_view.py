@@ -67,7 +67,6 @@ class VentanaPrincipal(QMainWindow):
         self.btn_agregar_historial.clicked.connect(self.show_page_agregar_historial)
         self.btn_factura_cita.clicked.connect(self.show_page_factura)
 
-
         # botones venta
         # self.btn_realizado_cotizacion.clicked.connect(self.registrar_cotizacion)
         # self.btn_realizado_facturacion.clicked.connect(self.registrar_factura)
@@ -93,7 +92,6 @@ class VentanaPrincipal(QMainWindow):
         self.btn_eliminar_Cita.clicked.connect(self.eliminar_cita)
         self.tablaCita.cellClicked.connect(self.click_tabla_cita)
 
-
         self.aghisto_btn.clicked.connect(self.registrar_historia)
         #self.actualizarCita_btn.clicked.connect(self.actualizar_cita)
         self.cargar_histo.clicked.connect(self.carga_tabla_historial)
@@ -104,8 +102,6 @@ class VentanaPrincipal(QMainWindow):
 
         self.generarReceta_btn.clicked.connect(self.generarReceta)
 
-
-
     # Funcionalidad de botones
 
     def inicio_sesion(self):
@@ -115,7 +111,7 @@ class VentanaPrincipal(QMainWindow):
         self.stackedWidget.setCurrentWidget(self.page_farmacia)
         self.carga_tabla_medicamento()
 
-    def show_page_venta (self):
+    def show_page_venta(self):
         self.stackedWidget.setCurrentWidget(self.page_ventas)
 
     def show_page_paciente(self):
@@ -663,12 +659,12 @@ class VentanaPrincipal(QMainWindow):
             mana = sql_structures.Manager()
             id_far = mana.get("inventariofarmacia", columns_ingreso, pro, "nombre")
             factura = sql_structures.Factura(self.nombreVenta_le.text(),
-                                               self.nitVenta_le.text(),
-                                               self.direccionVenta_le.text(),
-                                               self.productofactura_le.text(),
-                                               total,
-                                               id_far,
-                                               self.usuarioVenta_le.text())
+                                             self.nitVenta_le.text(),
+                                             self.direccionVenta_le.text(),
+                                             self.productofactura_le.text(),
+                                             total,
+                                             id_far,
+                                             self.usuarioVenta_le.text())
             factura.management('ag_factura ')
             self.nombreVenta_le.clear()
             self.nitVenta_le.clear()
@@ -706,9 +702,9 @@ class VentanaPrincipal(QMainWindow):
             mana = sql_structures.Manager()
             id_far = mana.gett("inventariofarmacia", columns_ingreso, "nombre", pro)
             cotizacion = sql_structures.Cotizacion(self.nombreVenta_le.text(),
-                                               self.nitVenta_le.text(),
-                                               self.direccionVenta_le.text(),
-                                               self.productoCotizacion_le.text(),
+                                                   self.nitVenta_le.text(),
+                                                   self.direccionVenta_le.text(),
+                                                   self.productoCotizacion_le.text(),
                                                    total,
                                                    id_far)
             cotizacion.management('ag_cotizacion')
@@ -724,7 +720,7 @@ class VentanaPrincipal(QMainWindow):
             QMessageBox.about(self, 'Aviso', 'Error de agregado!')
         self.show_page_farmacia()
 
-# receta
+    # receta
     def registrar_receta(self):
         try:
             columns_ingreso = ['id', 'nombre', 'especialidad', 'cobroCita']
@@ -737,11 +733,11 @@ class VentanaPrincipal(QMainWindow):
             mana = sql_structures.Manager()
             id_pac = mana.get("paciente", columns_ingreso_pac, pac, "nombre")
             receta = sql_structures.Receta(self.medicamentoReceta_le.text(),
-                                               self.dosisReceta_le.text(),
-                                               self.horarioReceta_le.text(),
-                                               self.descripcionReceta_le.text(),
-                                                   id_doc,
-                                                   id_pac)
+                                           self.dosisReceta_le.text(),
+                                           self.horarioReceta_le.text(),
+                                           self.descripcionReceta_le.text(),
+                                           id_doc,
+                                           id_pac)
             receta.management('ag_receta')
             self.medicamentoReceta_le.clear()
             self.dosisReceta_le.clear()
@@ -758,14 +754,14 @@ class VentanaPrincipal(QMainWindow):
     def actualizar_receta(self):
         try:
             receta = sql_structures.Receta('',
-                                               '',
-                                               '',
-                                               '',
-                                               '','',
-                                               self.datoCambiarReceta_box.currentText(),
-                                               self.nuevoValorReceta_le.text(),
-                                               self.idActualizarReceta_le.text())
-            receta .management('up_receta')
+                                           '',
+                                           '',
+                                           '',
+                                           '', '',
+                                           self.datoCambiarReceta_box.currentText(),
+                                           self.nuevoValorReceta_le.text(),
+                                           self.idActualizarReceta_le.text())
+            receta.management('up_receta')
             QMessageBox.about(self, 'Aviso', 'Actualizado correctamente!')
         except Exception as e:
             print(e)
@@ -775,13 +771,13 @@ class VentanaPrincipal(QMainWindow):
     def eliminar_receta(self):
         try:
             receta = sql_structures.Receta('',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '','',
-                                                         self.id_c)
+                                           '',
+                                           '',
+                                           '',
+                                           '',
+                                           '',
+                                           '', '',
+                                           self.id_c)
             receta.management('del_receta')
             QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
         except Exception as e:
@@ -827,7 +823,7 @@ class VentanaPrincipal(QMainWindow):
         except Exception as e:
             print(e)
 
-# receta
+    # receta
     def registrar_cita(self):
         try:
             columns_ingreso = ['id', 'nombre', 'especialidad', 'cobroCita']
@@ -840,9 +836,9 @@ class VentanaPrincipal(QMainWindow):
             mana = sql_structures.Manager()
             id_pac = mana.get("paciente", columns_ingreso_pac, pac, "nombre")
             cita = sql_structures.Cita(self.horarioCita_le.text(),
-                                               self.descripcionCita_ln.text(),
-                                                   id_doc,
-                                                   id_pac)
+                                       self.descripcionCita_ln.text(),
+                                       id_doc,
+                                       id_pac)
             cita.management('ag_cita')
             self.horarioCita_le.clear()
             self.descripcionCita_ln.clear()
@@ -857,12 +853,12 @@ class VentanaPrincipal(QMainWindow):
     def actualizar_cita(self):
         try:
             cita = sql_structures.Cita('',
-                                               '',
-                                               '','',
-                                               self.datoCambiarCita_box.currentText(),
-                                               self.nuevoValorCita_le.text(),
-                                               self.idActualizarCita_le.text())
-            cita .management('up_cita')
+                                       '',
+                                       '', '',
+                                       self.datoCambiarCita_box.currentText(),
+                                       self.nuevoValorCita_le.text(),
+                                       self.idActualizarCita_le.text())
+            cita.management('up_cita')
             QMessageBox.about(self, 'Aviso', 'Actualizado correctamente!')
         except Exception as e:
             print(e)
@@ -872,12 +868,12 @@ class VentanaPrincipal(QMainWindow):
     def eliminar_cita(self):
         try:
             cita = sql_structures.Cita('',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         '',
-                                                         self.id_c)
+                                       '',
+                                       '',
+                                       '',
+                                       '',
+                                       '',
+                                       self.id_c)
             cita.management('del_cita')
             QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
         except Exception as e:
@@ -920,14 +916,14 @@ class VentanaPrincipal(QMainWindow):
     def registrar_historia(self):
         try:
             historial = sql_structures.Historial_clinico(self.nombreHistorial_le.text(),
-                                               self.edadHistorial_le.text(),
-                                               self.sexoHistorial_le.text(),
-                                               self.tipoHistorial_le.text(),
-                                               self.enfHistorial_le.text(),
-                                               self.padHistorial_le.text(),
-                                               self.alergiaHistorial_le.text(),
-                                               self.id_paHistorial_le.text(),
-                                               self.obseHistorial_le.text())
+                                                         self.edadHistorial_le.text(),
+                                                         self.sexoHistorial_le.text(),
+                                                         self.tipoHistorial_le.text(),
+                                                         self.enfHistorial_le.text(),
+                                                         self.padHistorial_le.text(),
+                                                         self.alergiaHistorial_le.text(),
+                                                         self.id_paHistorial_le.text(),
+                                                         self.obseHistorial_le.text())
             historial.management('ag_historial')
             self.nombreHistorial_le.clear()
             self.edadHistorial_le.clear()
@@ -963,15 +959,15 @@ class VentanaPrincipal(QMainWindow):
     def eliminar_historia(self):
         try:
             historial = sql_structures.Historial_clinico('',
-                                               '',
-                                               '',
-                                               '',
-                                               '',
-                                               '',
-                                               '','',
-                                               '','',
-                                               '',
-                                               self.id_c)
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '',
+                                                         '', '',
+                                                         '', '',
+                                                         '',
+                                                         self.id_c)
             historial.management('del_historial')
             QMessageBox.about(self, 'Aviso', 'Se elimino con exito!')
         except Exception as e:
@@ -984,7 +980,7 @@ class VentanaPrincipal(QMainWindow):
         item = self.tablahistorial.item(row, column)
         value = item.text()
         columns_ingreso = ['id', 'nombre', 'edad', 'sexo', 'tipoSangre', 'enfHereditarias', 'padPrevios', 'alergias',
-                             'paciente_id', 'observaciones']
+                           'paciente_id', 'observaciones']
         header_item = self.tablahistorial.horizontalHeaderItem(column)
         column_name = header_item.text()
 
@@ -1035,11 +1031,11 @@ class VentanaPrincipal(QMainWindow):
             id_far = mana.get("citas", columns_ingreso, id_pa, "id")
             print(id_far)
             factu = sql_structures.Factura_ci(self.nombreFaccita_le.text(),
-                                               self.nitFaccita_le.text(),
-                                               self.direccionFaccita_le.text(),
-                                               self.Motivofaccita_le.text(),
-                                                self.totalfaccita_le.text(),
-                                               id_far)
+                                              self.nitFaccita_le.text(),
+                                              self.direccionFaccita_le.text(),
+                                              self.Motivofaccita_le.text(),
+                                              self.totalfaccita_le.text(),
+                                              id_far)
             factu.management('ag_factura_ci')
             self.nombreFaccita_le.clear()
             self.nitFaccita_le.clear()
@@ -1053,7 +1049,6 @@ class VentanaPrincipal(QMainWindow):
         self.show_page_cita()
 
     # Receta
-
 
     def generarReceta(self):
         now = datetime.now()
