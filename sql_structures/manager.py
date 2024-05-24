@@ -7,9 +7,11 @@ connection = None
 def get_db_connection(user, database, password):
     global connection
     try:
+        # Patrón Singleton para conectar a base de datos
+        # Patrón Proxy
         if connection is None:
             connection = mysql.connector.connect(
-                host='127.0.0.1', user=user, password=password, database=database, port=3306
+                host='127.0.0.1', user=user, password=password, database=database, port=3001
             )
             print("Primera conexión creada:", database)
         else:
@@ -23,8 +25,8 @@ def get_db_connection(user, database, password):
 class Manager:
     def __init__(self):
         self.database_user = 'root'
-        self.database_password = 'andree2332'
-        # self.database_password = '1234'
+        # self.database_password = 'andree2332'
+        self.database_password = '1234'
         self.database_database = 'hosplaesperanza'
         self.conexion = get_db_connection(self.database_user, self.database_database, self.database_password)
         self.cursor = self.conexion.cursor()
@@ -94,9 +96,13 @@ class Manager:
         self.cursor.execute(query)
         rows = self.cursor.fetchall()
         if rows[0][0] == 'Administrador':
+            return 0
+        elif rows[0][0] == 'Doctor':
             return 1
-        elif rows[0][0] == 'Trabajador':
+        elif rows[0][0] == 'Farmacia':
             return 2
+        elif rows[0][0] == 'Secretaria':
+            return 3
 
     def iniciar_contra(self, data):
         contrasena = 'contraseña'

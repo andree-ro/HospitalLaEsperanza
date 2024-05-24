@@ -31,8 +31,12 @@ class SqlDataBase_usuarios:
     def set_permisos(self):
         if self.role == 'Administrador':
             self.permiso_id = 0
-        # elif self.role == 'Trabajador':
-        #     self.permiso_id = 1
+        elif self.role == 'Doctor':
+            self.permiso_id = 1
+        elif self.role == 'Farmacia':
+            self.permiso_id = 2
+        elif self.role == 'Secretaria':
+            self.permiso_id = 3
 
         return self.permiso_id
 

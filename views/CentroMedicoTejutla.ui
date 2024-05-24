@@ -126,7 +126,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_6">
+           <widget class="QPushButton" name="Manualbtn">
             <property name="minimumSize">
              <size>
               <width>200</width>
@@ -379,7 +379,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                       </property>
                       <layout class="QVBoxLayout" name="verticalLayout_113">
                        <item>
-                        <widget class="QTableWidget" name="tablaFarmacia_2">
+                        <widget class="QTableWidget" name="tablaUsuario">
                          <property name="styleSheet">
                           <string notr="true">font: 75 11pt &quot;Open Sans Semibold&quot;</string>
                          </property>
@@ -429,7 +429,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                            </spacer>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="cargarInventarioMed_btn_2">
+                           <widget class="QPushButton" name="cargarUsu_btn">
                             <property name="minimumSize">
                              <size>
                               <width>200</width>
@@ -687,7 +687,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                            </spacer>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="btn_agregar_farmacia_2">
+                           <widget class="QPushButton" name="btn_agregar_usuario">
                             <property name="minimumSize">
                              <size>
                               <width>200</width>
@@ -745,7 +745,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                            </spacer>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="btn_actualizar_farmacia_2">
+                           <widget class="QPushButton" name="btn_actualizar_usuario">
                             <property name="minimumSize">
                              <size>
                               <width>200</width>
@@ -803,7 +803,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
                            </spacer>
                           </item>
                           <item>
-                           <widget class="QPushButton" name="btn_eliminarMedicamento_2">
+                           <widget class="QPushButton" name="btn_eliminarUsuario">
                             <property name="minimumSize">
                              <size>
                               <width>200</width>
@@ -993,7 +993,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="idActualizarMed_le_2"/>
+                        <widget class="QLineEdit" name="info_usuario"/>
                        </item>
                       </layout>
                      </widget>
@@ -1025,7 +1025,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="nuevoValorMed_le_2"/>
+                        <widget class="QLineEdit" name="info_contrasena"/>
                        </item>
                       </layout>
                      </widget>
@@ -1057,7 +1057,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QComboBox" name="datoCambiarMed_box_2">
+                        <widget class="QComboBox" name="info_rol">
                          <property name="styleSheet">
                           <string notr="true">color: rgb(0, 0, 0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
@@ -1114,7 +1114,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="actualizarMedicamento_btn_2">
+                     <widget class="QPushButton" name="actualizarUsuario_btn">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -1278,7 +1278,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="idActualizarMed_le_3"/>
+                        <widget class="QLineEdit" name="idActualizarUsu_le"/>
                        </item>
                       </layout>
                      </widget>
@@ -1310,7 +1310,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QComboBox" name="datoCambiarMed_box_3">
+                        <widget class="QComboBox" name="datoCambiarUsu_box">
                          <property name="styleSheet">
                           <string notr="true">color: rgb(0, 0, 0);
 font: 75 10pt &quot;Open Sans Semibold&quot;</string>
@@ -1362,7 +1362,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="QLineEdit" name="nuevoValorMed_le_3"/>
+                        <widget class="QLineEdit" name="nuevoValorMed_le_2"/>
                        </item>
                       </layout>
                      </widget>
@@ -1399,7 +1399,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="actualizarMedicamento_btn_3">
+                     <widget class="QPushButton" name="actualizarUsuari_btn">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -8464,7 +8464,7 @@ font: 75 10pt &quot;Open Sans Semibold&quot;</string>
                      </spacer>
                     </item>
                     <item>
-                     <widget class="QPushButton" name="actualizarCita_btn_3">
+                     <widget class="QPushButton" name="actualizarPaciente_btn">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -8753,7 +8753,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                             </property>
                             <layout class="QVBoxLayout" name="verticalLayout_15">
                              <item>
-                              <widget class="QLineEdit" name="info_usuario_11">
+                              <widget class="QLineEdit" name="info_usua">
                                <property name="styleSheet">
                                 <string notr="true">color: rgb(0, 0, 0);
 font: 75 9pt &quot;Open Sans Semibold&quot;</string>
@@ -8848,7 +8848,7 @@ font: 75 12pt &quot;Open Sans Semibold&quot;</string>
                             </property>
                             <layout class="QVBoxLayout" name="verticalLayout_16">
                              <item>
-                              <widget class="QLineEdit" name="info_usuario_12">
+                              <widget class="QLineEdit" name="info_contra">
                                <property name="styleSheet">
                                 <string notr="true">color: rgb(0, 0, 0);
 font: 75 9pt &quot;Open Sans Semibold&quot;</string>
@@ -11821,7 +11821,7 @@ font: 75 9pt  &quot;Open Sans Semibold&quot;
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="btn_modulo_receta_2">
+           <widget class="QPushButton" name="btn_modulo_usuario">
             <property name="minimumSize">
              <size>
               <width>100</width>

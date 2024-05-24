@@ -6,12 +6,15 @@ from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from datetime import datetime
 import webbrowser
+from encrypt import *
 
 
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super(VentanaPrincipal, self).__init__()
         loadUi('views/CentroMedicoTejutla.ui', self)
+        # Patrón Adapter
+        # Decorator
 
         self.frame_modulos.hide()
 
@@ -23,7 +26,7 @@ class VentanaPrincipal(QMainWindow):
         self.acumulador = 1
         self.total = 0
         # Botones y funciones
-        self.btn_inicio_sesion.clicked.connect(self.inicio_sesion)
+        #        self.btn_inicio_sesion.clicked.connect(self.inicio_sesion)
         self.btn_modulo_farmacia.clicked.connect(self.show_page_farmacia)
         self.btn_modulo_doctor.clicked.connect(self.show_page_doctor)
         self.btn_modulo_paciente.clicked.connect(self.show_page_paciente)
@@ -42,6 +45,7 @@ class VentanaPrincipal(QMainWindow):
         self.btn_Citas.clicked.connect(self.show_page_cita)
         self.btn_agregar_Cita.clicked.connect(self.show_page_agregar_cit)
         self.btn_actualizar_cita.clicked.connect(self.show_page_actualizar_cit)
+        self.btn_modulo_usuario.clicked.connect(self.show_page_usuario)
 
         # botones doctor
         self.agregarDoc_btn.clicked.connect(self.registrar_doctor)
@@ -76,7 +80,7 @@ class VentanaPrincipal(QMainWindow):
         self.realizado_facturacion.clicked.connect(self.generarFactura)
         self.agregarCotizacion.clicked.connect(self.agregar_a_cotizacion)
         self.realizado_cotizacion.clicked.connect(self.generarCotizacion)
-        self.generarFacCitas.clicked.connect(self.generarFacturaCita)
+        #       self.generarFacCitas.clicked.connect(self.generarFacturaCita)
 
         # Receta
         self.agregarReceta_btn.clicked.connect(self.registrar_receta)
@@ -102,10 +106,23 @@ class VentanaPrincipal(QMainWindow):
 
         self.generarReceta_btn.clicked.connect(self.generarReceta)
 
+        self.btn_agregar_usuario.clicked.connect(self.show_page_agregarusuario)
+        self.btn_actualizar_usuario.clicked.connect(self.show_page_actualizarusuario)
+        self.actualizarUsuario_btn.clicked.connect(self.new_user)
+        self.actualizarUsuari_btn.clicked.connect(self.update_user)
+        self.btn_eliminarUsuario.clicked.connect(self.delete_user)
+        self.tablaUsuario.cellClicked.connect(self.click_tabla_usuario)
+        self.cargarUsu_btn.clicked.connect(self.carga_tabla_Usuario)
+
+        self.btn_inicio_sesion.clicked.connect(self.iniciar_sesion)
+        self.Manualbtn.clicked.connect(self.abrir_manual)
+
     # Funcionalidad de botones
 
-    def inicio_sesion(self):
-        self.frame_modulos.show()
+    # def inicio_sesion(self):
+    #     self.frame_modulos.show()
+
+    # Patrón strategy
 
     def show_page_farmacia(self):
         self.stackedWidget.setCurrentWidget(self.page_farmacia)
@@ -117,6 +134,16 @@ class VentanaPrincipal(QMainWindow):
     def show_page_paciente(self):
         self.stackedWidget.setCurrentWidget(self.page_paciente)
         self.carga_tabla_pacientes()
+
+    def show_page_usuario(self):
+        self.stackedWidget.setCurrentWidget(self.page_usuarios)
+        self.carga_tabla_Usuario()
+
+    def show_page_agregarusuario(self):
+        self.stackedWidget.setCurrentWidget(self.page_agregar_usuario)
+
+    def show_page_actualizarusuario(self):
+        self.stackedWidget.setCurrentWidget(self.page_actualizar_usuario)
 
     def show_page_doctor(self):
         self.stackedWidget.setCurrentWidget(self.page_doctor)
@@ -173,6 +200,7 @@ class VentanaPrincipal(QMainWindow):
     # def show_page_factura_cita(self):
     #     self.stackedWidget.setCurrentWidget(self.page_Factura_Citas)
 
+    # Patrón Factory Method
     # Doctor
     def registrar_doctor(self):
         try:
@@ -1110,3 +1138,122 @@ class VentanaPrincipal(QMainWindow):
         self.productos.clear()
         self.total = 0
         self.acumulador += 1
+
+    def new_user(self):
+        try:
+            usuarios = sql_structures.SqlDataBase_usuarios(self.info_usuario.text(),
+                                                           self.info_contrasena.text(),
+                                                           self.info_rol.currentText())
+            usuarios.new_user()
+            self.info_usuario.clear()
+            self.info_contrasena.clear()
+            QMessageBox.about(self, 'Aviso', 'Agregado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error de agregado!')
+        self.show_page_usuario()
+
+    def update_user(self):
+        try:
+            usuarios = sql_structures.SqlDataBase_usuarios("", "", "",
+                                                           self.datoCambiarUsu_box.currentText(),
+                                                           self.nuevoValorMed_le.text(),
+                                                           self.idActualizarUsu_le.text())
+            usuarios.update_user()
+            self.nuevoValorMed_le.clear()
+            self.idActualizarUsu_le.clear()
+            QMessageBox.about(self, 'Aviso', 'Modificado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error al modificar!')
+        self.show_page_usuario()
+
+    def delete_user(self):
+        try:
+            usuarios = sql_structures.SqlDataBase_usuarios('', '', '',
+                                                           '', '', self.id_c)
+            usuarios.delete_user()
+            QMessageBox.about(self, 'Aviso', 'Eliminado correctamente!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Error al eliminar!')
+        self.carga_tabla_Usuario()
+
+    def click_tabla_usuario(self, row, column):
+        manager = sql_structures.Manager()
+        item = self.tablaUsuario.item(row, column)
+        value = item.text()
+        columns_ingreso = ['id', 'Usuario', 'Contraseña', 'Rol', 'permisos_id']
+        header_item = self.tablaUsuario.horizontalHeaderItem(column)
+        column_name = header_item.text()
+
+        if column_name == 'Usuario':
+            self.id_c = manager.get('usuario', columns_ingreso, value, 'Usuario')
+        elif column_name == 'Contraseña':
+            self.id_c = manager.get('usuario', columns_ingreso, value, 'Contraseña')
+        elif column_name == 'Rol':
+            self.id_c = manager.get('usuario', columns_ingreso, value, 'Rol')
+
+    def carga_tabla_Usuario(self):
+        try:
+            mana = sql_structures.Manager()
+            dato = mana.print_table('usuario')
+            self.tablaUsuario.setRowCount(len(dato))
+            for i in range(len(dato)):
+                self.tablaUsuario.setItem(i, 0, QTableWidgetItem(str(dato[i][1])))
+                self.tablaUsuario.setItem(i, 1, QTableWidgetItem(str(dato[i][2])))
+                self.tablaUsuario.setItem(i, 2, QTableWidgetItem(str(dato[i][3])))
+        except Exception as e:
+            print(e)
+
+    def iniciar_sesion(self):
+        encrip = Metodo()
+        refue = Metodos_refuerzo()
+        key = "abcdefghijkl12345678!@#$"
+        # key = 'protodrjympg15599357!@#$'
+        key1 = "~Marp~__842631597"
+        a = ""
+        offset = 8
+        encrypted = ""
+        try:
+            self.usuario_comprobacion = self.info_usua.text()
+            usuario = sql_structures.Manager()
+            rol = usuario.iniciar_ses(self.usuario_comprobacion)
+            contrasena_comprobacion = self.info_contra.text()
+            contrasena = usuario.iniciar_contra(self.usuario_comprobacion)
+            c = encrip.decrypt(offset, contrasena, key)
+            print(self.usuario_comprobacion)
+            print(contrasena)
+            print(c)
+            print(rol)
+            if contrasena_comprobacion == c:
+                t = True
+                if rol == 0:
+                    self.frame_modulos.show()
+                elif rol == 1:
+                    self.frame_modulos.show()
+                    self.btn_modulo_farmacia.hide()
+                    self.btn_modulo_usuario.hide()
+                elif rol == 2:
+                    self.frame_modulos.show()
+                    self.btn_modulo_doctor.hide()
+                    self.btn_modulo_paciente.hide()
+                    self.btn_modulo_receta.hide()
+                    self.btn_modulo_usuario.hide()
+                elif rol == 3:
+                    self.frame_modulos.show()
+                    self.btn_modulo_doctor.hide()
+                    self.btn_modulo_farmacia.hide()
+                    self.btn_modulo_receta.hide()
+                    self.btn_modulo_usuario.hide()
+                else:
+                    QMessageBox.about(self, 'Aviso', 'Usuario incorrecto!')
+            else:
+                QMessageBox.about(self, 'Aviso', 'Contraseña incorrecta!')
+        except Exception as e:
+            print(e)
+            QMessageBox.about(self, 'Aviso', 'Contraseña incorrecta!')
+
+    def abrir_manual(self):
+        path = 'C:/Users/andre/Documents/analisis y diseño/proyecto/manual de usuario.pdf'
+        webbrowser.open_new(path)
